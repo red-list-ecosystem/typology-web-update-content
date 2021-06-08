@@ -1,3 +1,10 @@
+.*
+~*
+vendor*
+composer*
+
+flags/
+
 # History files
 .Rhistory
 .Rapp.history
