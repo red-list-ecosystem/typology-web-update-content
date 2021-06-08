@@ -12,6 +12,7 @@ con <- dbConnect(drv, dbname = Sys.getenv("DBNAME"),
 
 work.dir <- Sys.getenv("WORKDIR")
 script.dir <- Sys.getenv("SCRIPTDIR")
+target.dir <- sprintf("%s/_posts/explore/2_groups/", Sys.getenv("WEBCONTENTREPO"))
 
 setwd(work.dir)
 args <- commandArgs(TRUE)
@@ -36,9 +37,6 @@ s.a.r <- data.frame(
       replace=c("ml<sup>-1</sup>","m<sup>2</sup>","m<sup>3</sup>/s",##"_e.g._","_i.e._",
       "_et al._","mgC m<sup>-3</sup>","C<sub>4</sub>","C<sub>3</sub>","_in situ_","1<sup>st</sup>","2<sup>nd</sup>","3<sup>rd</sup>","0<sup>th</sup>","2<sup>th</sup>","≥"),stringsAsFactors=F)
 
-
-target.dir <- sprintf("%s/_posts/explore/2_groups/",
-sub("ecosphere-db","typology-map-content",script.dir))
 
 for (target.EFG in the.codes) {
    print(target.EFG)
