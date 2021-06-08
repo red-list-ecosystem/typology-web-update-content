@@ -12,6 +12,7 @@ con <- dbConnect(drv, dbname = Sys.getenv("DBNAME"),
 
 work.dir <- Sys.getenv("WORKDIR")
 script.dir <- Sys.getenv("SCRIPTDIR")
+target.dir <- sprintf("%s/_posts/explore/1_biomes/", Sys.getenv("WEBCONTENTREPO"))
 
 setwd(work.dir)
 
@@ -21,9 +22,7 @@ ON b.biome_code=d.biome_code WHERE d.version='v2.0'")
 
 biome.info <- dbGetQuery(con,qry)
 
-target.dir <- sprintf("%s/_posts/explore/1_biomes/",
-sub("ecosphere-db","typology-map-content",script.dir))
-
+# search and replace
 s.a.r <- data.frame(
       search=c("ml-1","m2","m3/s",##"e.g.","i.e.",## not necessary according to Timo
       "et al.",
