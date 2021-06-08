@@ -42,3 +42,16 @@ do
    done
 done
 ```
+
+
+## Then...
+
+After running the script we need to commit and push the changes in the local repo to the remote:
+
+```sh
+cd $WEBCONTENTREPO
+git status
+git add *
+git commit -m "updated content"
+git push
+```
