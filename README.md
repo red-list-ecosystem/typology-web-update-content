@@ -1,6 +1,11 @@
+---
+title: Update IUCN Global Ecosystem Typology content
+author: José R. Ferrer-Paris ([@jrfep](https://github.com/jrfep))
+---
 # typology-web-update-content
-Scripts to update content of the typology web site
+Scripts to update content of the **IUCN Global Ecosystem Typology** [web site](https://global-ecosystems.org/).
 
+Maintained by [@jrfep](https://github.com/jrfep)
 
 ## Export content for typology website
 
