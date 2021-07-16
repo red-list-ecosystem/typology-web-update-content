@@ -4,23 +4,23 @@ for k in $(cat ${filelist})
 do
   echo $k
   # extract title
-  grep "title: " $MDDIR/$k | sed -e "s/title: /\n# /" > tmp
+  grep "title: " $EFGDIR/$k | sed -e "s/title: /\n# /" > tmp
 
   # starting and ending lines and delete selected lines
-  FIRSTline=$(grep -n -e "^# Ecological Traits" $MDDIR/$k | cut -d: -f1)
-  LASTline=$(grep -n -e "^### Map references" $MDDIR/$k | cut -d: -f1)
-  # sed  $FIRSTline','$LASTline'p'  $MDDIR/$k >> tmp
-  [ "$LASTline" == "" ] && LASTline=$(wc -l $MDDIR/$k | cut -d" " -f1)
+  FIRSTline=$(grep -n -e "^# Ecological Traits" $EFGDIR/$k | cut -d: -f1)
+  LASTline=$(grep -n -e "^### Map references" $EFGDIR/$k | cut -d: -f1)
+  # sed  $FIRSTline','$LASTline'p'  $EFGDIR/$k >> tmp
+  [ "$LASTline" == "" ] && LASTline=$(wc -l $EFGDIR/$k | cut -d" " -f1)
 
-  sed -n $FIRSTline','$LASTline'p'  $MDDIR/$k | sed -e 's/^# /## /g' >> tmp
+  sed -n $FIRSTline','$LASTline'p'  $EFGDIR/$k | sed -e 's/^# /## /g' >> tmp
   sed -i -e '/^## Distribution/ {n;n;n;n;d;}' -e '$d' -e '/Citation/,+5d' -e '/Map references/d' tmp
 
   ## add the Diagram and foto
   DAMlink=$(echo $k | sed -e "s:0100-01-01-:DAM/:" -e "s/.md/-diagram.png/")
   FOTOlink=$(echo $k | sed -e "s:0100-01-01-:FOTO/:" -e "s/.md/.jpg/")
   JSpath=$(echo $k | sed -e "s:0100-01-01-::" -e "s/.md//")
-  FOTOcaption=$(jq '.[] | select(.path=="'$JSpath'") | .image.caption.en' $JSONFILE | sed -e 's/"//g')
-  FOTOcredit=$(jq '.[] | select(.path=="'$JSpath'") | .image.credit.en' $JSONFILE | sed -e 's/"//g')
+  FOTOcaption=$(jq '.[] | select(.path=="'$JSpath'") | .image.caption.en' $EFGJSN | sed -e 's/"//g')
+  FOTOcredit=$(jq '.[] | select(.path=="'$JSpath'") | .image.credit.en' $EFGJSN | sed -e 's/"//g')
 
   sed -i -e "/\[DIAGRAM\]/i\![](${FOTOlink})\n\n#### ${FOTOcaption}. \n##### Credit: ${FOTOcredit}\n\n" tmp
 

@@ -97,13 +97,13 @@ bash $SCRIPTDIR/bash/copy-assets.sh
 To extract the captions and credits for the photographs we can use `jq` to query the json files. Here are some examples of queries that can be done with `jq`:
 
 ```sh
-JSONFILE=$HOME/proyectos/typology-website/typology-map-data/data/config/groups.json
-jq ".path[f_1_1]" $JSONFILE
-jq '.[] | select(.path=="f_1_2") | .[].image.caption.en' $JSONFILE
-jq .[].path $JSONFILE
-jq .[].image.caption.en $JSONFILE
-jq .[].image.credit.en $JSONFILE
-jq '.[] | select(.path=="'tf_1_6'") ' $JSONFILE
+EFGJSN=$HOME/proyectos/typology-website/typology-map-data/data/config/groups.json
+jq ".path[f_1_1]" $EFGJSN
+jq '.[] | select(.path=="f_1_2") | .[].image.caption.en' $EFGJSN
+jq .[].path $EFGJSN
+jq .[].image.caption.en $EFGJSN
+jq .[].image.credit.en $EFGJSN
+jq '.[] | select(.path=="'tf_1_6'") ' $EFGJSN
 ```
 
 These will be used in the following step
@@ -112,25 +112,31 @@ These will be used in the following step
 
 Declare input directories:
 ```sh
-export MDDIR=$HOME/proyectos/typology-website/typology-map-content/_posts/explore/2_groups/
-export JSONFILE=$HOME/proyectos/typology-website/typology-map-data/data/config/groups.json
+export BIODIR=$HOME/proyectos/typology-website/typology-map-content/_posts/explore/1_biomes/
+export EFGDIR=$HOME/proyectos/typology-website/typology-map-content/_posts/explore/2_groups/
+export BIOJSN=$HOME/proyectos/typology-website/typology-map-data/data/config/biomes.json
+export EFGJSN=$HOME/proyectos/typology-website/typology-map-data/data/config/groups.json
+
 ```
 
 Create a list of files in the appropriate order:
 ```sh
+cd $WORKDIR/profile-docx
+rm all_profiles.*
 rm $WORKDIR/profile-docx/file.list
 
-for PATTERN in '*-t_*' '*-s_*' '*-sf_*' '*-sm_*' '*-tf_*' '*-f_*' '*-fm_*' '*-m_*' '*-mt_*' '*-mft_*'
+for BIOME in t_1 t_2 t_3 t_4 t_5 t_6 t_7
 do
-  find $MDDIR -name $PATTERN -exec basename {} \; | sort | cat >> $WORKDIR/profile-docx/file.list
+  bash $SCRIPTDIR/bash/pre-process-markdown-biome.sh ${BIOME}
+  #  '*-t_*' '*-s_*' '*-sf_*' '*-sm_*' '*-tf_*' '*-f_*' '*-fm_*' '*-m_*' '*-mt_*' '*-mft_*'
+  find $EFGDIR -name '*-'${BIOME}'_*' -exec basename {} \; | sort | cat >> $WORKDIR/profile-docx/file.list
+  bash $SCRIPTDIR/bash/pre-process-markdown.sh $WORKDIR/profile-docx/file.list
+
 done
 ```
 
 Now run this script to add images and delete/modify lines in each markdown and add them to the output `all_profiles.md` file
 ```sh
-cd $WORKDIR/profile-docx
-rm all_profiles.*
-bash $SCRIPTDIR/bash/pre-process-markdown.sh $WORKDIR/profile-docx/file.list
 ```
 
 ### Export with `pandoc`
@@ -151,7 +157,5 @@ Download a lua-filter for pagebreaks:
 Now export using pandoc with the reference doc defined above:
 
 ```sh
-
 pandoc -o all_profiles.docx -f markdown -t docx all_profiles.md --reference-doc=custom-reference-David.docx
-
 ```
