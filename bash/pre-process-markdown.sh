@@ -4,7 +4,7 @@ for k in $(cat ${filelist})
 do
   echo $k
   # extract title
-  grep "title: " $EFGDIR/$k | sed -e "s/title: /\n# /" > tmp
+  grep "title: " $EFGDIR/$k | sed -e "s/title: /\n## /" > tmp
 
   # starting and ending lines and delete selected lines
   FIRSTline=$(grep -n -e "^# Ecological Traits" $EFGDIR/$k | cut -d: -f1)
