@@ -14,10 +14,14 @@ FOTOcredit=$(jq '.[] | select(.path=="'$JSpath'") | .image.credit.en' $BIOJSN | 
 
 echo '
 ![]('${FOTOlink}')
+
 #### '${FOTOcaption}'.
 ##### Credit: '${FOTOcredit} >> tmp
 
 tail -n +10 $k >> tmp
+
+sed -i -e 's;/explore/groups/;https://global-ecosystems.org/explore/groups/;g' tmp
+sed -i -e 's;/explore/biomes/;https://global-ecosystems.org/explore/biomes/;g' tmp
 
 ##add to pile
 cat tmp >> all_profiles.md

@@ -42,6 +42,7 @@ do
    sed -i -e 's/^\* /- /g' -e '/^\- /{s/\([ a-zA-Z\.]\)\*/\1/g}' tmp
 
    sed -i -e 's;/explore/groups/;https://global-ecosystems.org/explore/groups/;g' tmp
+   sed -i -e 's;/explore/biomes/;https://global-ecosystems.org/explore/biomes/;g' tmp
 
   ##add to pile
   cat tmp >> all_profiles.md

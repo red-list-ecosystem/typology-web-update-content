@@ -125,12 +125,13 @@ cd $WORKDIR/profile-docx
 rm all_profiles.*
 rm $WORKDIR/profile-docx/file.list
 
-for BIOME in t_1 t_2 t_3 t_4 t_5 t_6 t_7
+for BIOME in t_1 t_2 ##t_3 t_4 t_5 t_6 t_7
 do
-  bash $SCRIPTDIR/bash/pre-process-markdown-biome.sh ${BIOME}
+  bash $SCRIPTDIR/bash/pre-process-markdown-per-biome.sh ${BIOME}
   #  '*-t_*' '*-s_*' '*-sf_*' '*-sm_*' '*-tf_*' '*-f_*' '*-fm_*' '*-m_*' '*-mt_*' '*-mft_*'
   find $EFGDIR -name '*-'${BIOME}'_*' -exec basename {} \; | sort | cat >> $WORKDIR/profile-docx/file.list
   bash $SCRIPTDIR/bash/pre-process-markdown.sh $WORKDIR/profile-docx/file.list
+  rm $WORKDIR/profile-docx/file.list
 
 done
 ```
