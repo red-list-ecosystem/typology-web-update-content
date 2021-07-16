@@ -5,7 +5,6 @@ do
   convert $FOTOIN/$j -density 200x200 -resize 290x290 $FOTOOUT/$j # if we want to resize them
 done
 
-mkdir DAM
 for j in $(ls $DAMIN/*diagram.png)
 do
   # resize de 18.45 cm a 10cm
@@ -13,7 +12,6 @@ do
   # cp $j DAM/$(basename $j)
 done
 
-mkdir MAP
 for j in $(ls $MAPIN/*)
 do
   # resize de 18.45 cm a 12cm

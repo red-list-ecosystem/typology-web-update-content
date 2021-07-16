@@ -1,5 +1,6 @@
 #!/bin/bash
-for k in $(cat file.list)
+filelist=$1
+for k in $(cat ${filelist})
 do
   echo $k
   # extract title
@@ -31,11 +32,16 @@ do
   MAPlink=$(ls $MAPpat)
   sed -i -e '/^## Distribution/i\![]('${MAPlink}')\n' tmp
 
-  sed -i -e "s/^## Ecological Traits/## Ecosystem properties:/" -e "s/^## Key Ecological Drivers/## Ecological drivers:/" -e "s/^## Distribution/## Distribution:/" -e "s/^## References/### References:/"  tmp
+  sed -i -e "s/^## Ecological Traits/***Ecosystem properties***: /" -e "s/^## Key Ecological Drivers/***Ecological drivers***: /" -e "s/^## Distribution/***Distribution***:/" -e "s/^## References/### References:/"  tmp
+  sed -i -e '/^\*/,/^[A-Z]/{/^\*/!{/^[A-Z]/!d}}' tmp
 
   ## sed -i -e 's/^* //g' tmp
   ## sed -e 's/\(*\)DOI: */\1/g' tmp
    sed -i -e "s/DOI: $PARTITION_COLUMN.*//g" tmp
+
+   sed -i -e 's/^\* /- /g' -e '/^\- /{s/\([ a-z\.]\)\*/\1/g}' tmp
+
+
   ##add to pile
   cat tmp >> all_profiles.md
 

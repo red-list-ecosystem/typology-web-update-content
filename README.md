@@ -78,12 +78,16 @@ cd $WORKDIR/profile-docx
 Now we can copy the files (fotos, maps and diagramms) using this bash script:
 
 ```sh
-FOTOIN=$HOME/proyectos/typology-website/typology-map-content/assets/uploads
-DAMIN=$HOME/proyectos/typology-website/typology-map-content/assets/uploads
-MAPIN=$HOME/tmp/GET-IM-xport-zenodo/output-rasters/profile-png
-FOTOOUT=$WORKDIR/profile-docx/FOTO
-DAMOUT=$WORKDIR/profile-docx/DAM
-MAPOUT=$WORKDIR/profile-docx/MAP
+export FOTOIN=$HOME/proyectos/typology-website/typology-map-content/assets/uploads
+export DAMIN=$HOME/proyectos/typology-website/typology-map-content/assets/uploads
+export MAPIN=$HOME/tmp/GET-IM-xport-zenodo/output-rasters/profile-png
+
+export FOTOOUT=$WORKDIR/profile-docx/FOTO
+export DAMOUT=$WORKDIR/profile-docx/DAM
+export MAPOUT=$WORKDIR/profile-docx/MAP
+mkdir -p $DAMOUT
+mkdir -p $MAPOUT
+mkdir -p $FOTOOUT
 
 bash $SCRIPTDIR/bash/copy-assets.sh
 ```
