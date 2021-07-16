@@ -118,18 +118,19 @@ export JSONFILE=$HOME/proyectos/typology-website/typology-map-data/data/config/g
 
 Create a list of files in the appropriate order:
 ```sh
-rm file.list
+rm $WORKDIR/profile-docx/file.list
 
 for PATTERN in '*-t_*' '*-s_*' '*-sf_*' '*-sm_*' '*-tf_*' '*-f_*' '*-fm_*' '*-m_*' '*-mt_*' '*-mft_*'
 do
-  find $MDDIR -name $PATTERN -exec basename {} \; | sort | cat >> file.list
+  find $MDDIR -name $PATTERN -exec basename {} \; | sort | cat >> $WORKDIR/profile-docx/file.list
 done
 ```
 
 Now run this script to add images and delete/modify lines in each markdown and add them to the output `all_profiles.md` file
 ```sh
+cd $WORKDIR/profile-docx
 rm all_profiles.*
-bash $SCRIPTDIR/bash/pre-process-markdown.sh file.list
+bash $SCRIPTDIR/bash/pre-process-markdown.sh $WORKDIR/profile-docx/file.list
 ```
 
 ### Export with `pandoc`

@@ -39,8 +39,9 @@ do
   ## sed -e 's/\(*\)DOI: */\1/g' tmp
    sed -i -e "s/DOI: $PARTITION_COLUMN.*//g" tmp
 
-   sed -i -e 's/^\* /- /g' -e '/^\- /{s/\([ a-z\.]\)\*/\1/g}' tmp
+   sed -i -e 's/^\* /- /g' -e '/^\- /{s/\([ a-zA-Z\.]\)\*/\1/g}' tmp
 
+   sed -i -e 's;/explore/groups/;https://global-ecosystems.org/explore/groups/;g' tmp
 
   ##add to pile
   cat tmp >> all_profiles.md
