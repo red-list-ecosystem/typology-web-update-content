@@ -125,7 +125,7 @@ cd $WORKDIR/profile-docx
 rm all_profiles.*
 rm $WORKDIR/profile-docx/file.list
 
-for BIOME in t_1 t_2 ##t_3 t_4 t_5 t_6 t_7
+for BIOME in t_1 t_2 t_3 t_4 t_5 t_6 t_7 s_1 s_2 sf_1 sf_2 sm_1 tf_1 f_1 f_2 f_3 fm_1 m_1 m_2 m_3 m_4 mt_1 mt_2 mt_3 mft_1
 do
   bash $SCRIPTDIR/bash/pre-process-markdown-per-biome.sh ${BIOME}
   #  '*-t_*' '*-s_*' '*-sf_*' '*-sm_*' '*-tf_*' '*-f_*' '*-fm_*' '*-m_*' '*-mt_*' '*-mft_*'
