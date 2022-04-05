@@ -160,3 +160,15 @@ Now export using pandoc with the reference doc defined above:
 ```sh
 pandoc -o all_profiles.docx -f markdown -t docx all_profiles.md --reference-doc=custom-reference-David.docx
 ```
+
+
+
+## working with python
+
+```sh
+source env/project-env.sh
+cd $SCRIPTDIR/
+conda activate jptr
+pip install python-docx
+jupyter-lab
+```
