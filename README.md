@@ -7,11 +7,70 @@ Scripts to update content of the **IUCN Global Ecosystem Typology** [web site](h
 
 Maintained by [@jrfep](https://github.com/jrfep)
 
-## Export content for typology website
+The content of the profiles for biomes (level 2) and ecosystem functional groups (level 3) of the typology is updated primarily by Prof. David Keith and coauthors and is provided in a word document in format `.docx`. So far there have been several version:
+
+- version 1.0: appeared in an original, internal IUCN report (including 104 level 3 units)
+- version 2.0: appeared in the official [IUCN report]() published in 2020 (including 108 level 3 units)
+- version 2.1: is under review as an appendix of a scientific article (including 110 level 3 units)
+
+Minor revisions and updates have been published as minor versions and appeared in the [web site](https://global-ecosystems.org/) or distributed as part of published data sets in a [Zenodo repository]().
+
+Initially the content of the website was formatted as Markdown documents in a github repository and updated via `prose.io` or direct commits via `git`. But this presented a challenge to synchronise small edits in the Markdown documents back to the working version in the word document.
+
+A `postgresql` database was set-up to keep control of the valid versions of the text of the profiles, and used as main source to export content to Markdown or XML documents that are distributed with the data sets in Zenodo.
+
+So the current workflow is:
+
+1. DK provides updated profiles in docx format
+2. Text content is inserted into the corresponding tables of the database as new version
+3. Scripts are run to update content in database or repositories as needed
+
+## Database structure
+
+The database includes three tables for content: `efg_ecological_traits`, `efg_key_ecological_drivers` and `efg_distribution`. They all have the same structure:
+
+```sql
+Column    |            Type             | Nullable | Comment
+--------------+-----------------------------+-----------+----------
+code         | character varying(10)       | not null | efg code, e.g. `T1.1`
+language     | character varying(10)       | not null | `en` for English, etc
+description  | text                        |          | text
+contributors | text[]                      |          | array of authors
+editors      | text[]                      |          | array of editors
+version      | character varying(10)       | not null | version as `v1.0`, etc
+update       | timestamp without time zone |          |
+```
+
+Index is constructed by unique combinations of code, language and version, `code` is used as a foreign key from table `functional_groups`, which includes the name, alternative shortname and brief description.
+
+## Scripts for importing to database
+
+Initially the content was imported using manual inserts into the database or via a webform written in `php`. This required copy-and-paste from the word document.
+
+For the current version, the information was imported using python and the module `python-docx`.
+
+### Python script
+
+The code to import the information is documented using a jupyter lab notebook. To run the jupyter lab I set up an environment names `jptr` using my local version of conda:
+
+```sh
+source env/project-env.sh
+cd $SCRIPTDIR/
+conda activate jptr
+pip install python-docx
+jupyter-lab
+```
+
+The script is located in the [python/](python/) folder.
+
+
+## Scripts for exporting from database
+
+### Export content for typology website
 
 We have an R script for exporting from the postgresql database to the local repository.
 
-### Biome descriptions
+#### Biome descriptions
 
 Run the scripts for all biomes:
 
@@ -22,7 +81,7 @@ cd $WORKDIR
 Rscript --vanilla $SCRIPTDIR/R/update-biome-content-typology-website.R
 ```
 
-### EFG descriptions
+#### EFG descriptions
 Run the script for one ecosystem functional group:
 
 ```sh
@@ -50,7 +109,7 @@ done
 ```
 
 
-### Then...
+#### Then...
 
 After running the script we need to commit and push the changes in the local repo to the remote:
 
@@ -62,7 +121,7 @@ git commit -m "updated content"
 git push
 ```
 
-## Export from Markdown
+### Export from Markdown
 
 In order to export the contents of the website in a word (or pdf, or ...) document we first bundle all markdown documents into a single file, and place the appropriate images in the right place. Then we can use `pandoc`.
 
@@ -159,16 +218,4 @@ Now export using pandoc with the reference doc defined above:
 
 ```sh
 pandoc -o all_profiles.docx -f markdown -t docx all_profiles.md --reference-doc=custom-reference-David.docx
-```
-
-
-
-## working with python
-
-```sh
-source env/project-env.sh
-cd $SCRIPTDIR/
-conda activate jptr
-pip install python-docx
-jupyter-lab
 ```
