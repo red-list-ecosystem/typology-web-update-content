@@ -97,7 +97,7 @@ if (is.na(efg.info$shortdesc)) {
 
    ## Query References
 
-   qry <- sprintf("SELECT ref_cite,author_list,title,container_title,date,post_title,doi  FROM efg_references as e LEFT JOIN ref_list as l ON e.ref_code=l.ref_code WHERE code = '%s' ORDER BY author_list", target.EFG, max(efg.texts$version,na.rm=T))
+   qry <- sprintf("SELECT ref_cite,author_list, title, container_title, date, post_title, doi  FROM efg_references as e LEFT JOIN ref_list as l ON e.ref_code=l.ref_code WHERE code = '%s' ORDER BY author_list", target.EFG)
 
    biblio <- dbGetQuery(con,qry)
    biblio$ftext <- with(biblio,sprintf("%1$s (%2$s) *%3$s*. **%4$s** %5$s.%6$s",
@@ -145,7 +145,7 @@ if (nrow(efg.maps)==1) {
 
    cat(file=target.arch,sprintf("\n%s\n", efg.maps$map_source), append=T)
 
-   qry <- sprintf("SELECT ref_cite,author_list,title,container_title,date,post_title,doi  FROM map_references as e LEFT JOIN ref_list as l ON e.ref_code=l.ref_code WHERE map_code = '%s' AND map_version = '%s'  ORDER BY author_list", efg.maps$map_code, max(efg.maps$map_version,na.rm=T))
+   qry <- sprintf("SELECT ref_cite, author_list, title, container_title, date, post_title, doi  FROM map_references as e LEFT JOIN ref_list as l ON e.ref_code=l.ref_code WHERE map_code = '%s' AND map_version = '%s'  ORDER BY author_list", efg.maps$map_code, max(efg.maps$map_version,na.rm=T))
 
    biblio <- dbGetQuery(con,qry)
    if (nrow(biblio)>0) {
@@ -167,7 +167,7 @@ sprintf(
      ys <- "."
    }
    map.author.list <- paste(map.authors,ys,sep="",collapse="")
- map.version <- sprintf("**Map version**: %1$s %2$s, updated %3$s.",efg.maps$map_code,efg.maps$map_version,efg.maps$update,map.author.list)
+ map.version <- sprintf("**Map version**: %1$s %2$s, updated %3$s.",efg.maps$map_code,efg.maps$map_version,efg.maps$update)
 
 } else {
    cat(file=target.arch,sprintf("\nMAP IN PREPARATION\n"), append=T)

@@ -89,7 +89,7 @@ Run the script for one ecosystem functional group:
 source $HOME/proyectos/typology-website/typology-web-update-content/env/project-env.sh
 cd $WORKDIR
 
-Rscript --vanilla $SCRIPTDIR/R/update-efg-content-typology-website.R S1.2 v2.0
+Rscript --vanilla $SCRIPTDIR/R/update-efg-content-typology-website.R S1.2 v2.1
 ```
 
 #### Examples
