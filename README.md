@@ -63,12 +63,13 @@ jupyter-lab
 
 The script is located in the [python/](python/) folder.
 
-
 ## Scripts for exporting from database
+
+Over the time, we have used several scripts to read the current version of the content from the database and produce output documents for different applications.
 
 ### Export content for typology website
 
-We have an R script for exporting from the postgresql database to the local repository.
+We have an R script for exporting from the postgresql database to the local copy of the repository.
 
 #### Biome descriptions
 
@@ -91,7 +92,8 @@ cd $WORKDIR
 Rscript --vanilla $SCRIPTDIR/R/update-efg-content-typology-website.R S1.2 v2.0
 ```
 
-Examples to run the script for several functional groups:
+#### Examples
+These run the script for several functional groups:
 
 ```sh
 for k in  TF1.6 TF1.7
@@ -111,7 +113,7 @@ done
 
 #### Then...
 
-After running the script we need to commit and push the changes in the local repo to the remote:
+After running the scripts we need to commit and push the changes in the local repo to the remote:
 
 ```sh
 cd $WEBCONTENTREPO
@@ -121,9 +123,11 @@ git commit -m "updated content"
 git push
 ```
 
-### Export from Markdown
+### Export to word document
 
-In order to export the contents of the website in a word (or pdf, or ...) document we first bundle all markdown documents into a single file, and place the appropriate images in the right place. Then we can use `pandoc`.
+In some occasions we needed to consolidate the current version of the content from the database into a word document for editing.
+
+For this, we first bundle all markdown documents from the local copy of the repo into a single file, and place the appropriate images in the right place. Then we can use `pandoc` to export the contents in a word (or pdf, or ...) document.
 
 We will use this directory for the output
 
@@ -132,7 +136,7 @@ mkdir -p $WORKDIR/profile-docx
 cd $WORKDIR/profile-docx
 ```
 
-### Copy assets
+#### Copy assets
 
 Now we can copy the files (fotos, maps and diagramms) using this bash script:
 
@@ -151,7 +155,7 @@ mkdir -p $FOTOOUT
 bash $SCRIPTDIR/bash/copy-assets.sh
 ```
 
-### Extract info from json files
+#### Extract info from json files
 
 To extract the captions and credits for the photographs we can use `jq` to query the json files. Here are some examples of queries that can be done with `jq`:
 
@@ -196,10 +200,11 @@ done
 ```
 
 Now run this script to add images and delete/modify lines in each markdown and add them to the output `all_profiles.md` file
+
 ```sh
 ```
 
-### Export with `pandoc`
+#### Export with `pandoc`
 
 Download this template, edit and rename as `custom-reference-David.docx`:
 
