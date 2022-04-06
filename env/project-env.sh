@@ -7,6 +7,7 @@ export WORKDIR=$WORKDIR/$PROJECT
 mkdir -p $WORKDIR
 
 export WEBCONTENTREPO=$SCRIPTHOME/typology-website/typology-map-content
+export WEBDATAREPO=$SCRIPTHOME/typology-website/typology-map-data
 
 ## credentials for connecting to the database:
 source $HOME/.ecospheredb

@@ -3,6 +3,7 @@ require(dplyr)
 require(xml2)
 require(stringr)
 require("RPostgreSQL")
+require(jsonlite)
 drv <- dbDriver("PostgreSQL") ## remember to update .pgpass file
 
 con <- dbConnect(drv, dbname = Sys.getenv("DBNAME"),
@@ -13,6 +14,7 @@ con <- dbConnect(drv, dbname = Sys.getenv("DBNAME"),
 work.dir <- Sys.getenv("WORKDIR")
 script.dir <- Sys.getenv("SCRIPTDIR")
 target.dir <- sprintf("%s/_posts/explore/2_groups/", Sys.getenv("WEBCONTENTREPO"))
+config.json <- read_json(sprintf("%s/data/config/groups.json", Sys.getenv("WEBDATAREPO")))
 
 setwd(work.dir)
 args <- commandArgs(TRUE)
@@ -21,12 +23,12 @@ if (length(args)>0) {
    if (!is.null(args[2])) {
       the.vers <- args[2]
    } else {
-      the.vers <- "v2.0"
+      the.vers <- "v2.1"
    }
 } else {
    ##the.codes <- dbGetQuery(con,sprintf("SELECT distinct code FROM functional_groups WHERE biome_code = 'T2'"))$code
    the.codes <- dbGetQuery(con,sprintf("SELECT distinct code FROM functional_groups"))$code
-   the.vers <- "v2.0"
+   the.vers <- "v2.1"
 }
 
 
@@ -88,11 +90,18 @@ if (is.na(efg.info$shortdesc)) {
 ##   efg.texts <- rbind(efg.texts,data.frame(section="Diagramatic assembly model",description="{% include DAM.html %}",version=NA,update=NA))
 
    ## Query map info
-   qry <- sprintf("SELECT map_code,map_source,contributors,map_version,map_type,status,DATE(update) as update FROM map_metadata WHERE code = '%s' AND map_type IN ('Web navigation') AND status IN ('valid') ORDER BY update DESC LIMIT 1", target.EFG)
+
+   y <- unlist(lapply(config.json,function(x) if(x$id == target.EFG) return(x)))
+   map_file <- switch(y['layer.type'],"topojson"=y['layer.path'] ,"raster"= y['layer.tileset'])
+   qry <- sprintf("SELECT map_code, map_source, contributors, map_version, map_type, status, DATE(update) as update, map_file, file_description, file_comments FROM map_files f LEFT JOIN map_metadata m USING(map_code, map_version) WHERE code = '%s' AND map_file ILIKE ('%%%s%%') ORDER BY update DESC LIMIT 1", target.EFG,map_file)
       efg.maps <-   dbGetQuery(con,qry)
 
-
-   map.authors <- unique(strsplit(gsub("\\{|\\}|\"","",efg.maps$contributors),",")[[1]])
+      if (nrow(efg.maps)==0) {
+        cat(sprintf("Map file %s not documented in database ",map_file))
+        map.authors <- ""
+              } else {
+        map.authors <- unique(strsplit(gsub("\\{|\\}|\"","",efg.maps$contributors),",")[[1]])
+      }
 
 
    ## Query References
