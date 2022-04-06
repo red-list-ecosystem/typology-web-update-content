@@ -61,8 +61,8 @@ for (target.EFG in the.codes) {
 
    efg.texts <- data.frame()
    for (tbl.name in c("Ecological Traits","Key Ecological Drivers","Distribution")) {
-      qry <- sprintf("SELECT '%s' as section,description,contributors,version,update FROM efg_%s WHERE code = '%s' AND language = 'en' AND version = '%s' ORDER BY update DESC limit 1",
-      tbl.name,gsub(" ","_",tolower(tbl.name)),target.EFG,the.vers)
+      qry <- sprintf("SELECT '%s' as section, description, contributors, version, update FROM efg_%s WHERE code = '%s' AND language = 'en' AND version = '%s' ORDER BY update DESC limit 1",
+      tbl.name, gsub(" ","_",tolower(tbl.name)), target.EFG, the.vers)
       rslts <-   dbGetQuery(con,qry)
       efg.texts <- rbind(efg.texts,rslts[,c("section","description","version","update")])
       authors <- unique(c(authors,strsplit(gsub("\\{|\\}|\"","",rslts$contributors),",")[[1]]))
@@ -73,6 +73,10 @@ for (target.EFG in the.codes) {
 
    efg.texts$description <- gsub("([SMFT]+[0-9].[0-9]+)","[\\1](/explore/groups/\\1)",efg.texts$description)
    efg.texts$description <- gsub("biome ([SMFT]+[0-9])","[\\1](/explore/biomes/\\1)",efg.texts$description)
+
+   # exclude this note, this should be in map description
+   efg.texts$description <- gsub(" See map caveats (Table [S4.1](/explore/groups/S4.1)).", "", efg.texts$description, fixed=T)
+
    for (k in 1:nrow(s.a.r))
       efg.texts$description <- gsub(s.a.r[k,"search"],s.a.r[k,"replace"],efg.texts$description,fixed=T)
 
