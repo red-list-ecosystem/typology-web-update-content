@@ -67,7 +67,8 @@ for (target.EFG in the.codes) {
       efg.texts <- rbind(efg.texts,rslts[,c("section","description","version","update")])
       authors <- unique(c(authors,strsplit(gsub("\\{|\\}|\"","",rslts$contributors),",")[[1]]))
    }
-
+   efg.texts$section <- gsub("Key Ecological Drivers","Ecological Drivers",efg.texts$section)
+   efg.texts$section <- gsub("Ecological Traits","Ecosystem Properties",efg.texts$section)
    ## need to do this for each description
    ## sed -e 's|\([MFT+][0-9].[0-9+]\)|[\1](explore/groups/\1)|g' 0100-01-01-f_1_2.md
 

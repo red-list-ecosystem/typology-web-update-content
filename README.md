@@ -96,16 +96,16 @@ Rscript --vanilla $SCRIPTDIR/R/update-efg-content-typology-website.R S1.2 v2.1
 These run the script for several functional groups:
 
 ```sh
-for k in  TF1.6 TF1.7
+for k in TF1.1  TF1.2  TF1.3  TF1.4  TF1.5 TF1.6 TF1.7
 do
-  Rscript --vanilla $SCRIPTDIR/R/update-efg-content-typology-website.R ${k} v2.0
+  Rscript --vanilla $SCRIPTDIR/R/update-efg-content-typology-website.R ${k} v2.1
 done
 
 for j in $(seq 1 4)
 do
    for k in $(seq 1 4)
    do
-      Rscript --vanilla  $SCRIPTDIR/R/update-efg-content-typology-website.R M${j}.${k} v2.0
+      Rscript --vanilla  $SCRIPTDIR/R/update-efg-content-typology-website.R M${j}.${k} v2.1
    done
 done
 ```
