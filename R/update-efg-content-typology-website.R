@@ -97,17 +97,23 @@ if (is.na(efg.info$shortdesc)) {
    ## Query map info
 
    y <- unlist(lapply(config.json,function(x) if(x$id == target.EFG) return(x)))
-   map_file <- switch(y['layer.type'],"topojson"=y['layer.path'] ,"raster"= y['layer.tileset'])
-   qry <- sprintf("SELECT map_code, map_source, contributors, map_version, map_type, status, DATE(update) as update, map_file, file_description, file_comments FROM map_files f LEFT JOIN map_metadata m USING(map_code, map_version) WHERE code = '%s' AND map_file ILIKE ('%%%s%%') ORDER BY update DESC LIMIT 1", target.EFG,map_file)
-      efg.maps <-   dbGetQuery(con,qry)
-
-      if (nrow(efg.maps)==0) {
-        cat(sprintf("Map file %s not documented in database ",map_file))
-        map.authors <- ""
-              } else {
-        map.authors <- unique(strsplit(gsub("\\{|\\}|\"","",efg.maps$contributors),",")[[1]])
-      }
-
+    if ('layer.type' %in% names(y)) {
+       map_file <- switch(y['layer.type'],"topojson"=y['layer.path'] ,"raster"= y['layer.tileset'])
+       qry <- sprintf("SELECT map_code, map_source, contributors, map_version, map_type, status, DATE(update) as update, map_file, file_description, file_comments FROM map_files f LEFT JOIN map_metadata m USING(map_code, map_version) WHERE code = '%s' AND map_file ILIKE ('%%%s%%') ORDER BY update DESC LIMIT 1", target.EFG,map_file)
+        efg.maps <-   dbGetQuery(con,qry)
+    }
+    if (!exists("efg.maps")) {
+        cat(sprintf("No map file found "))
+            map.authors <- ""
+    } else {
+          if ( nrow(efg.maps)==0) {
+            cat(sprintf("Map file %s not documented in database ",map_file))
+            map.authors <- ""
+                  } else {
+            map.authors <- unique(strsplit(gsub("\\{|\\}|\"","",efg.maps$contributors),",")[[1]])
+          }    
+    }
+    
 
    ## Query References
 
@@ -149,6 +155,7 @@ cat(file=target.arch,"\n[DIAGRAM]\n", append=T)
 cat(file=target.arch,sprintf("\n# %s\n \n%s\n", efg.texts$section[-1], efg.texts$description[-1]), append=T)
 
 ## output map info
+if (exists("efg.maps")) {
 if (nrow(efg.maps)==1) {
 
   efg.maps$map_source <- gsub("([SMFT]+[0-9].[0-9]+)","[\\1](/explore/groups/\\1)",efg.maps$map_source)
@@ -188,7 +195,12 @@ sprintf(
    map.references <- ""
    map.version <- ""
 }
-
+} else {
+   cat(file=target.arch,sprintf("\nNO MAP AVAILABLE\n"), append=T)
+   map.references <- ""
+   map.version <- ""
+}   
+    
 ## output references
 
 
