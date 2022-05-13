@@ -188,7 +188,11 @@ sprintf(
      ys <- "."
    }
    map.author.list <- paste(map.authors,ys,sep="",collapse="")
- map.version <- sprintf("**Map version**: %1$s %2$s, updated %3$s.",efg.maps$map_code,efg.maps$map_version,efg.maps$update)
+    if (efg.maps$status=="valid") {
+     map.version <- sprintf("**Map version**: %1$s %2$s, updated %3$s.",efg.maps$map_code,efg.maps$map_version,efg.maps$update)
+        } else {
+     map.version <- sprintf("**Map version**: %1$s %2$s. This map requires review and will be updated shortly.", efg.maps$map_code,efg.maps$map_version)
+        }
 
 } else {
    cat(file=target.arch,sprintf("\nMAP IN PREPARATION\n"), append=T)
