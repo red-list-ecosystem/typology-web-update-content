@@ -58,6 +58,8 @@ source env/project-env.sh
 cd $SCRIPTDIR/
 conda activate jptr
 pip install python-docx
+pip install odfpy ## to be able to read ODS files
+
 jupyter-lab
 ```
 
