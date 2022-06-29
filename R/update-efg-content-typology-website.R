@@ -111,9 +111,9 @@ if (is.na(efg.info$shortdesc)) {
             map.authors <- ""
                   } else {
             map.authors <- unique(strsplit(gsub("\\{|\\}|\"","",efg.maps$contributors),",")[[1]])
-          }    
+          }
     }
-    
+
 
    ## Query References
 
@@ -203,8 +203,8 @@ sprintf(
    cat(file=target.arch,sprintf("\nNO MAP AVAILABLE\n"), append=T)
    map.references <- ""
    map.version <- ""
-}   
-    
+}
+
 ## output references
 
 
@@ -219,7 +219,7 @@ if (length(authors)>1) {
 cat(file=target.arch,sprintf("
 ## References
 
-**Citation**: %3$s (2020). *%7$s*. In: Keith, D.A., Ferrer-Paris, J.R., Nicholson, E. and Kingsford, R.T. (eds.) (2020). **The IUCN Global Ecosystem Typology 2.0: Descriptive profiles for biomes and ecosystem functional groups**. Gland, Switzerland: IUCN. DOI:[10.2305/IUCN.CH.2020.13.en](https://doi.org/10.2305/IUCN.CH.2020.13.en).
+**Citation**: %3$s (2020). *%7$s*. %8$s Keith, D.A., Ferrer-Paris, J.R., Nicholson, E. and Kingsford, R.T. (eds.) (2020). **The IUCN Global Ecosystem Typology 2.0: Descriptive profiles for biomes and ecosystem functional groups**. Gland, Switzerland: IUCN. DOI:[10.2305/IUCN.CH.2020.13.en](https://doi.org/10.2305/IUCN.CH.2020.13.en).
 **Content version**: %4$s, updated %5$s.
 
 %6$s
@@ -227,7 +227,18 @@ cat(file=target.arch,sprintf("
 ### Main references
 %1$s
 
-%2$s",paste("*",text.references,sep=" ",collapse="\n"),map.references,paste(authors,ys,sep="",collapse=""),max(efg.texts$version,na.rm=T),substr(max(efg.texts$update,na.rm=T),1,10),map.version,efg.info$name), append=T)
+%2$s",
+
+paste("*",text.references,sep=" ",collapse="\n"), #1
+map.references, #2
+paste(authors,ys,sep="",collapse=""), #3
+max(efg.texts$version,na.rm=T), #4
+substr(max(efg.texts$update,na.rm=T),1,10), #5
+map.version, #6
+efg.info$name, #7
+switch(the.vers,"v2.1"="Update to:","In:") #8
+),
+ append=T)
 
 }
 
