@@ -219,7 +219,7 @@ if (length(authors)>1) {
 cat(file=target.arch,sprintf("
 ## References
 
-**Citation**: %3$s (2020). *%7$s*. %8$s Keith, D.A., Ferrer-Paris, J.R., Nicholson, E. and Kingsford, R.T. (eds.) (2020). **The IUCN Global Ecosystem Typology 2.0: Descriptive profiles for biomes and ecosystem functional groups**. Gland, Switzerland: IUCN. DOI:[10.2305/IUCN.CH.2020.13.en](https://doi.org/10.2305/IUCN.CH.2020.13.en).
+**Citation**: %3$s (2022). *%7$s*. %8$s Keith, D.A., Ferrer-Paris, J.R., Nicholson, E. *et al.* (2022). *A function-based typology for Earth’s ecosystems – Appendix S4. The IUCN Global Ecosystem Typology v2.1: Descriptive profiles for Biomes and Ecosystem Functional Groups*. **Nature** DOI:[10.1038/...](https://doi.org/10.1038/...).
 **Content version**: %4$s, updated %5$s.
 
 %6$s
@@ -236,7 +236,7 @@ max(efg.texts$version,na.rm=T), #4
 substr(max(efg.texts$update,na.rm=T),1,10), #5
 map.version, #6
 efg.info$name, #7
-switch(the.vers,"v2.1"="Update to:","In:") #8
+switch(the.vers,"v2.2"="Update to:","In:") #8
 ),
  append=T)
 

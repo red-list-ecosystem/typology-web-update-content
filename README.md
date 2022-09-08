@@ -11,7 +11,7 @@ The content of the profiles for biomes (level 2) and ecosystem functional groups
 
 - version 1.0: appeared in an original, internal IUCN report (including 104 level 3 units)
 - version 2.0: appeared in the official [IUCN report]() published in 2020 (including 108 level 3 units)
-- version 2.1: is under review as an appendix of a scientific article (including 110 level 3 units)
+- version 2.1: is to be published as an appendix of a scientific article (including 110 level 3 units)
 
 Minor revisions and updates have been published as minor versions and appeared in the [web site](https://global-ecosystems.org/) or distributed as part of published data sets in a [Zenodo repository]().
 
