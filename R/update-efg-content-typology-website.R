@@ -217,12 +217,14 @@ if (length(authors)>1) {
 }
 
 cat(file=target.arch,sprintf("
-## References
+## Citation
 
-**Citation**: %3$s (2022). *%7$s*. %8$s Keith, D.A., Ferrer-Paris, J.R., Nicholson, E. *et al.* (2022). *A function-based typology for Earth’s ecosystems – Appendix S4. The IUCN Global Ecosystem Typology v2.1: Descriptive profiles for Biomes and Ecosystem Functional Groups*. **Nature** DOI:[10.1038/...](https://doi.org/10.1038/...).
+%3$s (2022). *%7$s*. %8$s Keith, D.A., Ferrer-Paris, J.R., Nicholson, E. *et al.* (2022). *A function-based typology for Earth’s ecosystems – Appendix S4. The IUCN Global Ecosystem Typology v2.1: Descriptive profiles for Biomes and Ecosystem Functional Groups*. **Nature** DOI:[10.1038/s41586-022-05318-4](https://doi.org/10.1038/s41586-022-05318-4).
 **Content version**: %4$s, updated %5$s.
 
 %6$s
+
+## References
 
 ### Main references
 %1$s
