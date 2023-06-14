@@ -7,13 +7,13 @@ Scripts to update content of the **IUCN Global Ecosystem Typology** [web site](h
 
 Maintained by [@jrfep](https://github.com/jrfep)
 
-The content of the profiles for biomes (level 2) and ecosystem functional groups (level 3) of the typology is updated primarily by Prof. David Keith and coauthors and is provided in a word document in format `.docx`. So far there have been several version:
+The content of the profiles for biomes (level 2) and ecosystem functional groups (level 3) of the typology is updated primarily by Prof. David Keith and coauthors and is provided in a word document in format `.docx`. So far there have been three published version:
 
 - version 1.0: appeared in an original, internal IUCN report (including 104 level 3 units)
-- version 2.0: appeared in the official [IUCN report]() published in 2020 (including 108 level 3 units)
-- version 2.1: is to be published as an appendix of a scientific article (including 110 level 3 units)
+- version 2.0: appeared in the official [IUCN report](https://doi.org/10.2305/IUCN.CH.2020.13.en) published in 2020 (including 108 level 3 units)
+- version 2.1: is published as an appendix of [Keith et al. 2022](https://doi.org/10.1038/s41586-022-05318-4) (including 110 level 3 units)
 
-Minor revisions and updates have been published as minor versions and appeared in the [web site](https://global-ecosystems.org/) or distributed as part of published data sets in a [Zenodo repository]().
+Minor revisions and updates have been published as minor versions and appeared in the [web site](https://global-ecosystems.org/) or distributed as part of published data sets in a [Zenodo repository](http://doi.org/10.5281/zenodo.3546513).
 
 Initially the content of the website was formatted as Markdown documents in a github repository and updated via `prose.io` or direct commits via `git`. But this presented a challenge to synchronise small edits in the Markdown documents back to the working version in the word document.
 
@@ -51,12 +51,13 @@ For the current version, the information was imported using python and the modul
 
 ### Python script
 
-The code to import the information is documented using a jupyter lab notebook. To run the jupyter lab I set up an environment names `jptr` using my local version of conda:
+The code to import the information is documented using a jupyter lab notebook. To run the jupyter lab I set up an environment named `jptr` using my local version of conda:
 
 ```sh
 source env/project-env.sh
 cd $SCRIPTDIR/
 conda activate jptr
+# or  source ~/proyectos/venv/jupyterlab/bin/activate
 pip install python-docx
 pip install odfpy ## to be able to read ODS files
 
@@ -225,4 +226,40 @@ Now export using pandoc with the reference doc defined above:
 
 ```sh
 pandoc -o all_profiles.docx -f markdown -t docx all_profiles.md --reference-doc=custom-reference-David.docx
+```
+
+## upload to OSF
+
+We will use OSF to keep copies in cloud storage.
+
+Install the osfclient in python from https://github.com/osfclient/osfclient:
+
+```sh
+pip install osfclient
+```
+Read the docs: https://osfclient.readthedocs.io/en/stable/
+
+Add a configuration file:
+```sh
+cd $SCRIPTDIR/data
+osf init
+```
+Append to this a line with the personal access token, the file is named `.osfcli.config`. and has the following structure:
+
+```
+[osf]
+username = ...@mail.xyz
+project = .....
+token = ....
+```
+Then we can list the files in the project
+
+```sh
+osf list 
+```
+
+Or upload files:
+
+```sh
+osf upload IUCN-GET-profiles-exported-2023-06-14.xlsx IUCN-GET-profiles-exported-2023-06-14.xlsx 
 ```

@@ -2,6 +2,8 @@
 ~*
 vendor*
 composer*
+secrets/
+data/
 
 flags/
 
