@@ -263,3 +263,9 @@ Or upload files:
 ```sh
 osf upload IUCN-GET-profiles-exported-2023-06-14.xlsx IUCN-GET-profiles-exported-2023-06-14.xlsx 
 ```
+
+Upload and Up:
+
+```sh
+osf upload -f IUCN-GET-profiles-exported-2023-06-15.xlsx IUCN-GET-profiles-exported-2023-06-14.xlsx
+```
