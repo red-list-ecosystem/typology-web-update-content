@@ -58,8 +58,12 @@ source env/project-env.sh
 cd $SCRIPTDIR/
 conda activate jptr
 # or  source ~/proyectos/venv/jupyterlab/bin/activate
+## after an update:
+# python -m ensurepip --default-pip
+pip install jupyterlab
 pip install python-docx
 pip install odfpy ## to be able to read ODS files
+pip install numpy geopandas rasterstats
 
 jupyter-lab
 ```
@@ -264,7 +268,7 @@ Or upload files:
 osf upload IUCN-GET-profiles-exported-2023-06-14.xlsx IUCN-GET-profiles-exported-2023-06-14.xlsx 
 ```
 
-Upload and Up:
+Overwrite uploaded file:
 
 ```sh
 osf upload -f IUCN-GET-profiles-exported-2023-06-15.xlsx IUCN-GET-profiles-exported-2023-06-14.xlsx
