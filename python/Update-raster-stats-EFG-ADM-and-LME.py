@@ -74,7 +74,7 @@ for file in files:
             finalresults['p.major'] = finalresults['major']*100/finalresults['area']
             if 'minor' in finalresults.columns:
                 finalresults['p.both'] = (finalresults['major']+finalresults['minor'])*100/finalresults['area']
-                countryresults = pd.pivot_table(finalresults, index='region_id',columns='EFG',values='p.both',aggfunc="sum")
+                countryresults = pd.pivot_table(finalresults, index='title_en',columns='EFG',values='p.both',aggfunc="sum")
             else:
-                countryresults = pd.pivot_table(finalresults, index='region_id',columns='EFG',values='p.major',aggfunc="sum")
+                countryresults = pd.pivot_table(finalresults, index='title_en',columns='EFG',values='p.major',aggfunc="sum")
             countryresults.to_excel(writer, sheet_name='EFG_by_countries')
