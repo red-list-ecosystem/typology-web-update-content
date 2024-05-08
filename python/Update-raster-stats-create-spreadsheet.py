@@ -36,7 +36,7 @@ with pd.ExcelWriter(repodir / 'data' / 'EFG-WB.xlsx') as writer:
 
 
 targetdir = repodir / 'sandbox' / 'csvs-EEZ' 
-files = [f for f in targetdir.iterdir() if f.match("EFG*WB.csv")]
+files = [f for f in targetdir.iterdir() if f.match("EFG*M[FST0-9]*.csv")]
 
 dfs = list()
 for f in files:
@@ -47,7 +47,7 @@ finalresults = pd.concat(dfs, axis = 0)
 finalresults = finalresults.fillna(0)
 finalresults['p.major'] = finalresults['major']*100/finalresults['area']
 finalresults['p.both'] = (finalresults['major']+finalresults['minor'])*100/finalresults['area']
-filteredresults = finalresults.loc[finalresults['p.both']>1,].sort_values(['SOVEREIGN1','p.both'], ascending=[True, False])
+filteredresults = finalresults.loc[finalresults['p.both']>0,].sort_values(['SOVEREIGN1','p.both'], ascending=[True, False])
 filteredresults = filteredresults[['GEONAME','SOVEREIGN1','area','EFG','mapfile','major','minor','p.major','p.both']]
 countryresults = pd.pivot_table(finalresults, index='SOVEREIGN1',columns='EFG',values='p.both',aggfunc="sum")
     
