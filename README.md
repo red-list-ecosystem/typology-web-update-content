@@ -65,6 +65,7 @@ pip install python-docx
 pip install odfpy ## to be able to read ODS files
 pip install numpy geopandas rasterstats
 pip install openpyxl  pyprojroot matplotlib
+ pip install zenodo_client
 jupyter-lab
 ```
 
@@ -290,5 +291,7 @@ Then we can edit this to make it easier to run for all EFGs.
  python Update-raster-stats-EFG-EEZ.py
 ```
 
-These can crash the JupyterLab server or terminal if run simultaneously (maybe too many open connections to one dataset?). Not sure what is the problem.
+These can crash the JupyterLab server or terminal if run simultaneously (maybe too many open connections to one dataset?). Problem is with some files with larger resolution.
+
+
 
