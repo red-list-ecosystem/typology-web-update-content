@@ -8,8 +8,8 @@
 
 # ### Import modules
 import sys
-import os
 import re
+import os
 import numpy as np
 from pathlib import Path
 import zipfile
@@ -24,24 +24,18 @@ import pyprojroot
 repodir = pyprojroot.find_root(pyprojroot.has_dir(".git"))
 gisdata = Path(os.path.expanduser('~')) / "gisdata"
 getimdir = repodir / "sandbox" / "eck4"
-csvdir = repodir / "sandbox" / "csvs-EEZ"
+csvdir = repodir / "sandbox" / "csvs"
 csvdir.mkdir(parents=True, exist_ok=True)
-
 
 thisfile = sys.argv[1]
 thisefg = re.findall(r'[MFTS]+[0-9]\.[0-9]+', thisfile)
 output_csv = csvdir / ('EFG-%s-WB.csv' % thisefg[0])
 if not os.path.exists(output_csv):
+    # read WorldBank boundaries
     tmpdir = tempfile.TemporaryDirectory()
-    # ### For EEZ layer
-    # Flanders Marine Institute (2023). Maritime Boundaries Geodatabase: Maritime Boundaries and Exclusive Economic Zones (200NM), version 12. Available online at https://www.marineregions.org/. https://doi.org/10.14284/632
-    # As requested by Emily (7 May 2024).
-    file = zipfile.ZipFile(gisdata / 'admin/global/EEZ/World_EEZ_v12_20231025_gpkg.zip')
-    file.extractall(path = tmpdir.name)
-    eez_zones = gpd.read_file(Path(tmpdir.name) / 'World_EEZ_v12_20231025_gpkg' / 'eez_v12.gpkg' )
-    ## Select EEZ zones of type 200 Nautical miles
-    selection = eez_zones.loc[eez_zones['POL_TYPE']=="200NM"]
-    selection.reset_index()
+    file = zipfile.ZipFile(gisdata / 'admin/global/World-Bank/wb_countries_admin0_10m.zip')
+    file.extractall(path =  tmpdir.name)
+    selection = gpd.read_file(Path(tmpdir.name) / 'WB_countries_Admin0_10m/WB_countries_Admin0_10m.shp' )
 
     print("%s :: %s" % (thisefg[0], thisfile))
     rst = getimdir / thisfile
@@ -54,13 +48,13 @@ if not os.path.exists(output_csv):
             cn = ["major","minor"]
         else:
             cn = ["minor"]
-        tsrs = raster.crs.to_proj4()
+        tsrs = raster.crs
         selection_xy=selection.to_crs(tsrs).reset_index()
         selection_xy['area']=selection_xy.area
     zs = zonal_stats(vectors=selection_xy.loc[:, 'geometry'], raster=rst, categorical=True)
     stats = pd.DataFrame(zs).fillna(0) * cellarea#One column per raster category, and pixel count as value
     stats.columns = cn
-    results = pd.concat([selection_xy.loc[:,('GEONAME','SOVEREIGN1','area')], stats], axis = 1)
+    results = pd.concat([selection_xy.loc[:,('OBJECTID','WB_NAME','area')], stats], axis = 1)
     results["EFG"] = thisefg[0]
     results["mapfile"] = thisfile
     results.to_csv(output_csv)

@@ -66,6 +66,7 @@ pip install odfpy ## to be able to read ODS files
 pip install numpy geopandas rasterstats
 pip install openpyxl  pyprojroot matplotlib
  pip install zenodo_client
+ pip install zenodo_get         
 jupyter-lab
 ```
 
@@ -292,6 +293,3 @@ Then we can edit this to make it easier to run for all EFGs.
 ```
 
 These can crash the JupyterLab server or terminal if run simultaneously (maybe too many open connections to one dataset?). Problem is with some files with larger resolution.
-
-
-
