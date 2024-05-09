@@ -49,29 +49,6 @@ Initially the content was imported using manual inserts into the database or via
 
 For the current version, the information was imported using python and the module `python-docx`.
 
-### Python script
-
-The code to import the information is documented using a jupyter lab notebook. To run the jupyter lab I set up an environment named `jptr` using my local version of conda:
-
-```sh
-source env/project-env.sh
-cd $SCRIPTDIR/
-conda activate jptr
-# or  source ~/proyectos/venv/jupyterlab/bin/activate
-## after an update:
-# python -m ensurepip --default-pip
-pip install jupyterlab
-pip install python-docx
-pip install odfpy ## to be able to read ODS files
-pip install numpy geopandas rasterstats
-pip install openpyxl  pyprojroot matplotlib
- pip install zenodo_client
- pip install zenodo_get         
-jupyter-lab
-```
-
-The script is located in the [python/](python/) folder.
-
 ## Scripts for exporting from database
 
 Over the time, we have used several scripts to read the current version of the content from the database and produce output documents for different applications.
