@@ -47,3 +47,9 @@ cd $SCRIPTDIR/sandbox
 parallel --jobs 8 python ../python/Update-raster-stats-EFG-WB.py  ::: $(ls SF*tif)
 parallel --jobs 4 python ../python/Update-raster-stats-EFG-EEZ.py  ::: $(ls *M[SF0-9]*tif)
 ```
+
+We can create a more flexible script and indicate to parallel to use the raster file name as the first argument
+```sh
+parallel --jobs 8 python ../python/Update-raster-stats-EFG.py {1} csvs-LMEADM  /opt/gisdata/admin/global/LME-admin/lme_admin_20210519.zip region_id title_en ::: $(ls *tif)
+```
+
