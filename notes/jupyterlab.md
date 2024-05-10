@@ -23,4 +23,23 @@ pip install numpy geopandas rasterstats
 jupyter-lab
 ```
 
-The script is located in the [python/](python/) folder.
+The scripts are located in the [python/](python/) folder.
+
+
+## Jupyter books to python executable:
+
+
+If we want to use the code in a script:
+```sh
+jupyter nbconvert --to python Update-raster-stats-per-country.ipynb 
+```
+
+Then we can edit this to make it easier to run for all EFGs.
+
+
+```sh
+ python Update-raster-stats-EFG-ADM-and-LME.py # this one runs faster? prob due to simplified polygons
+ python Update-raster-stats-EFG-EEZ.py
+```
+
+These can crash the JupyterLab server or terminal if run simultaneously (maybe too many open connections to one dataset?). Problem is with some files with larger resolution.
