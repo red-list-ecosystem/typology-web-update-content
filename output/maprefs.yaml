@@ -1,0 +1,3422 @@
+F1.1.IM.alt_v2.0:
+  datasets:
+  - GloRIC-1.0
+  references:
+  - Ouellet Dallaire et al. 2018
+F1.1.IM.grid_v1.0:
+  datasets:
+  - HydroAtlas-1.0
+  - FEOW-2008
+  references:
+  - Linke et al. 2019
+  - Abell et al. 2008
+F1.1.IM.mix_v1.0:
+  datasets:
+  - HydroAtlas-1.0
+  - FEOW-2008
+  references:
+  - Linke et al. 2019
+  - Abell et al. 2008
+F1.1.IM.mix_v2.0:
+  datasets:
+  - FEOW-2008
+  - Chelsa-1.2
+  - HydroAtlas-1.0
+  references:
+  - Abell et al. 2008
+  - Karger et al. 2017
+  - Linke et al. 2019
+F1.1.IM.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F1.1.WM.nwx_v1.0:
+  datasets:
+  - GloRIC-1.0
+  - GIRES-v1.0
+  references:
+  - Ouellet Dallaire et al. 2018
+  - Messager et al. 2021
+F1.1.web.mix_v1.0:
+  datasets:
+  - GloRIC-1.0
+  - FEOW-2008
+  references:
+  - Ouellet Dallaire et al. 2018
+  - Abell et al. 2008
+F1.1.web.mix_v2.0:
+  datasets:
+  - Chelsa-1.2
+  - HydroAtlas-1.0
+  - FEOW-2008
+  references:
+  - Karger et al. 2017
+  - Linke et al. 2019
+  - Abell et al. 2008
+F1.1.web.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F1.2.IM.alt_v2.0:
+  datasets:
+  - GloRIC-1.0
+  references:
+  - Ouellet Dallaire et al. 2018
+F1.2.IM.grid_v1.0:
+  datasets:
+  - HydroAtlas-1.0
+  - FEOW-2008
+  - GSW-1.1
+  references:
+  - Linke et al. 2019
+  - Abell et al. 2008
+  - Pekel et al. 2016
+F1.2.IM.mix_v1.0:
+  datasets:
+  - HydroAtlas-1.0
+  - GSW-1.1
+  - FEOW-2008
+  references:
+  - Linke et al. 2019
+  - Pekel et al. 2016
+  - Abell et al. 2008
+F1.2.IM.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F1.2.WM.nwx_v1.0:
+  datasets:
+  - GloRIC-1.0
+  - GIRES-v1.0
+  references:
+  - Ouellet Dallaire et al. 2018
+  - Messager et al. 2021
+F1.2.web.grid_v1.0:
+  datasets:
+  - GSW-1.1
+  - HydroAtlas-1.0
+  - FEOW-2008
+  references:
+  - Pekel et al. 2016
+  - Linke et al. 2019
+  - Abell et al. 2008
+F1.2.web.map_v1.0:
+  datasets:
+  - HydroAtlas-1.0
+  - GSW-1.1
+  - FEOW-2008
+  references:
+  - Linke et al. 2019
+  - Pekel et al. 2016
+  - Abell et al. 2008
+F1.2.web.mix_v1.0:
+  datasets:
+  - GloRIC-1.0
+  - FEOW-2008
+  references:
+  - Ouellet Dallaire et al. 2018
+  - Abell et al. 2008
+F1.2.web.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F1.3.IM.alt_v2.0:
+  datasets:
+  - GloRIC-1.0
+  references:
+  - Ouellet Dallaire et al. 2018
+F1.3.IM.grid_v1.0:
+  datasets:
+  - GloRIC-1.0
+  - FEOW-2008
+  references:
+  - Ouellet Dallaire et al. 2018
+  - Abell et al. 2008
+F1.3.IM.mix_v1.0:
+  datasets:
+  - GloRIC-1.0
+  references:
+  - Ouellet Dallaire et al. 2018
+F1.3.IM.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F1.3.WM.nwx_v1.0:
+  datasets:
+  - GlobalRiverIce2019
+  - GloRIC-1.0
+  references:
+  - Yang et al. 2020
+  - Ouellet Dallaire et al. 2018
+F1.3.web.grid_v1.0:
+  datasets:
+  - GloRIC-1.0
+  - FEOW-2008
+  references:
+  - Ouellet Dallaire et al. 2018
+  - Abell et al. 2008
+F1.3.web.map_v1.0:
+  datasets:
+  - GloRIC-1.0
+  references:
+  - Ouellet Dallaire et al. 2018
+F1.3.web.mix_v1.0:
+  datasets:
+  - GloRIC-1.0
+  - FEOW-2008
+  references:
+  - Ouellet Dallaire et al. 2018
+  - Abell et al. 2008
+F1.3.web.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F1.4.IM.alt_v2.0:
+  datasets:
+  - GloRIC-1.0
+  references:
+  - Ouellet Dallaire et al. 2018
+F1.4.IM.grid_v1.0:
+  datasets:
+  - HydroAtlas-1.0
+  - FEOW-2008
+  references:
+  - Linke et al. 2019
+  - Abell et al. 2008
+F1.4.IM.grid_v2.0:
+  datasets:
+  - HydroAtlas-1.0
+  - FEOW-2008
+  references:
+  - Linke et al. 2019
+  - Abell et al. 2008
+F1.4.IM.mix_v1.0:
+  datasets:
+  - HydroAtlas-1.0
+  - FEOW-2008
+  references:
+  - Linke et al. 2019
+  - Abell et al. 2008
+F1.4.IM.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F1.4.WM.nwx_v1.0:
+  datasets:
+  - GloRIC-1.0
+  - GIRES-v1.0
+  references:
+  - Ouellet Dallaire et al. 2018
+  - Messager et al. 2021
+F1.4.web.grid_v2.0:
+  datasets:
+  - HydroAtlas-1.0
+  - FEOW-2008
+  references:
+  - Linke et al. 2019
+  - Abell et al. 2008
+F1.4.web.map_v1.0:
+  datasets:
+  - HydroAtlas-1.0
+  - FEOW-2008
+  references:
+  - Linke et al. 2019
+  - Abell et al. 2008
+F1.4.web.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F1.5.IM.alt_v2.0:
+  datasets:
+  - GloRIC-1.0
+  references:
+  - Ouellet Dallaire et al. 2018
+F1.5.IM.grid_v1.0:
+  datasets:
+  - GSW-1.1
+  - HydroAtlas-1.0
+  - FEOW-2008
+  references:
+  - Pekel et al. 2016
+  - Linke et al. 2019
+  - Abell et al. 2008
+F1.5.IM.grid_v2.0:
+  datasets:
+  - HydroAtlas-1.0
+  - GSW-1.1
+  - FEOW-2008
+  references:
+  - Linke et al. 2019
+  - Pekel et al. 2016
+  - Abell et al. 2008
+F1.5.IM.mix_v1.0:
+  datasets:
+  - FEOW-2008
+  - GSW-1.1
+  - HydroAtlas-1.0
+  references:
+  - Abell et al. 2008
+  - Pekel et al. 2016
+  - Linke et al. 2019
+F1.5.IM.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F1.5.WM.nwx_v1.0:
+  datasets:
+  - GIRES-v1.0
+  - GloRIC-1.0
+  references:
+  - Messager et al. 2021
+  - Ouellet Dallaire et al. 2018
+F1.5.web.grid_v2.0:
+  datasets:
+  - GSW-1.1
+  - FEOW-2008
+  - HydroAtlas-1.0
+  references:
+  - Pekel et al. 2016
+  - Abell et al. 2008
+  - Linke et al. 2019
+F1.5.web.map_v1.0:
+  datasets:
+  - FEOW-2008
+  - GSW-1.1
+  - HydroAtlas-1.0
+  references:
+  - Abell et al. 2008
+  - Pekel et al. 2016
+  - Linke et al. 2019
+F1.5.web.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F1.6.IM.alt_v2.0:
+  datasets:
+  - GloRIC-1.0
+  references:
+  - Ouellet Dallaire et al. 2018
+F1.6.IM.mix_v1.0:
+  datasets:
+  - GSW-1.1
+  - FEOW-2008
+  references:
+  - Pekel et al. 2016
+  - Abell et al. 2008
+F1.6.IM.mix_v2.0:
+  datasets:
+  - GSW-1.1
+  - FEOW-2008
+  - MERIT-Hydro
+  references:
+  - Pekel et al. 2016
+  - Abell et al. 2008
+  - Yamazaki et al. 2019
+F1.6.IM.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F1.6.WM.nwx_v1.0:
+  datasets:
+  - GIRES-v1.0
+  - GloRIC-1.0
+  references:
+  - Messager et al. 2021
+  - Ouellet Dallaire et al. 2018
+F1.6.web.mix_v1.0:
+  datasets:
+  - FEOW-2008
+  - GSW-1.1
+  references:
+  - Abell et al. 2008
+  - Pekel et al. 2016
+F1.6.web.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F1.7.IM.alt_v1.0:
+  datasets:
+  - GloRIC-1.0
+  references:
+  - Ouellet Dallaire et al. 2018
+F1.7.IM.orig_v2.0:
+  datasets:
+  - GloRIC-1.0
+  references:
+  - Ouellet Dallaire et al. 2018
+F1.7.WM.nwx_v1.0:
+  datasets:
+  - HydroRIVERS-V1.0
+  - GloRIC-1.0
+  references:
+  - Lehner and Grill 2013
+  - Ouellet Dallaire et al. 2018
+F1.7.web.orig_v1.0:
+  datasets:
+  - GloRIC-1.0
+  references:
+  - Ouellet Dallaire et al. 2018
+F1.7.web.orig_v2.0:
+  datasets:
+  - GloRIC-1.0
+  references:
+  - Ouellet Dallaire et al. 2018
+F2.1.IM.alt_v2.0:
+  datasets:
+  - KG-climate-2018
+  - HydroLAKES-1.0
+  references:
+  - Beck et al. 2018
+  - Messager et al. 2016
+F2.1.IM.alt_v3.0:
+  datasets:
+  - KG-climate-2018
+  - GSW-1.1
+  - HydroLAKES-1.0
+  references:
+  - Beck et al. 2018
+  - Pekel et al. 2016
+  - Messager et al. 2016
+F2.1.IM.alt_v4.0:
+  datasets:
+  - KG-climate-2018
+  - HydroLAKES-1.0
+  - GSW-1.1
+  references:
+  - Beck et al. 2018
+  - Messager et al. 2016
+  - Pekel et al. 2016
+F2.1.IM.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F2.1.WM.nwx_v1.0:
+  datasets:
+  - HydroLAKES-1.0
+  references:
+  - Messager et al. 2016
+F2.1.web.alt_v4.0:
+  datasets:
+  - GSW-1.1
+  - HydroLAKES-1.0
+  - KG-climate-2018
+  references:
+  - Pekel et al. 2016
+  - Messager et al. 2016
+  - Beck et al. 2018
+F2.1.web.orig_v1.0:
+  datasets:
+  - KG-climate-2018
+  - HydroLAKES-1.0
+  references:
+  - Beck et al. 2018
+  - Messager et al. 2016
+F2.10.IM.mix_v1.0:
+  datasets:
+  - Subglacial-lake-list
+  - Subglacial-lake-list
+  - Subglacial-lake-list
+  - Subglacial-lake-list
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Wright, A., and Siegert, M. (2012)
+  - Livingstone et al. 2016
+  - Bowling et al 2019
+  - Marteinsson et al 2013
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+F2.10.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - Subglacial-lake-list
+  - Subglacial-lake-list
+  - Subglacial-lake-list
+  - Subglacial-lake-list
+  references:
+  - Dinerstein et al. 2017
+  - Livingstone et al. 2016
+  - Marteinsson et al 2013
+  - Wright, A., and Siegert, M. (2012)
+  - Bowling et al 2019
+F2.10.web.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Subglacial-lake-list
+  - Subglacial-lake-list
+  - Resolve-Ecoregions-2017
+  - Subglacial-lake-list
+  - Subglacial-lake-list
+  references:
+  - Tuanmu et al. 2014
+  - Bowling et al 2019
+  - Wright, A., and Siegert, M. (2012)
+  - Dinerstein et al. 2017
+  - Marteinsson et al 2013
+  - Livingstone et al. 2016
+F2.10.web.mix_v2.0:
+  datasets:
+  - Subglacial-lake-list
+  - Subglacial-lake-list
+  - Subglacial-lake-list
+  - EarthEnv-LandCover-v1.0
+  - Subglacial-lake-list
+  - Resolve-Ecoregions-2017
+  references:
+  - Livingstone et al. 2016
+  - Wright, A., and Siegert, M. (2012)
+  - Marteinsson et al 2013
+  - Tuanmu et al. 2014
+  - Bowling et al 2019
+  - Dinerstein et al. 2017
+F2.10.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - Resolve-Ecoregions-2017
+  - Subglacial-lake-list
+  - Subglacial-lake-list
+  - Subglacial-lake-list
+  references:
+  - Livingstone et al. 2016
+  - Dinerstein et al. 2017
+  - Wright, A., and Siegert, M. (2012)
+  - Bowling et al 2019
+  - Marteinsson et al 2013
+F2.2.IM.alt_v2.0:
+  datasets:
+  - KG-climate-2018
+  - HydroLAKES-1.0
+  references:
+  - Beck et al. 2018
+  - Messager et al. 2016
+F2.2.IM.mix_v1.0:
+  datasets:
+  - HydroLAKES-1.0
+  - KG-climate-2018
+  - GSW-1.1
+  references:
+  - Messager et al. 2016
+  - Beck et al. 2018
+  - Pekel et al. 2016
+F2.2.IM.mix_v2.0:
+  datasets:
+  - GSW-1.1
+  - HydroLAKES-1.0
+  - FEOW-2008
+  references:
+  - Pekel et al. 2016
+  - Messager et al. 2016
+  - Abell et al. 2008
+F2.2.IM.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F2.2.web.map_v1.0:
+  datasets:
+  - GSW-1.1
+  - HydroLAKES-1.0
+  - FEOW-2008
+  references:
+  - Pekel et al. 2016
+  - Messager et al. 2016
+  - Abell et al. 2008
+F2.2.web.mix_v2.0:
+  datasets:
+  - GSW-1.1
+  - HydroLAKES-1.0
+  - FEOW-2008
+  references:
+  - Pekel et al. 2016
+  - Messager et al. 2016
+  - Abell et al. 2008
+F2.2.web.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  - HydroLAKES-1.0
+  references:
+  - Abell et al. 2008
+  - Messager et al. 2016
+F2.3.IM.mix_v1.0:
+  datasets:
+  - HydroLAKES-1.0
+  - FEOW-2008
+  - GSW-1.1
+  references:
+  - Messager et al. 2016
+  - Abell et al. 2008
+  - Pekel et al. 2016
+F2.3.IM.mix_v2.0:
+  datasets:
+  - FEOW-2008
+  - GSW-1.1
+  - HydroLAKES-1.0
+  references:
+  - Abell et al. 2008
+  - Pekel et al. 2016
+  - Messager et al. 2016
+F2.3.IM.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F2.3.web.map_v1.0:
+  datasets:
+  - HydroLAKES-1.0
+  - GSW-1.1
+  - FEOW-2008
+  references:
+  - Messager et al. 2016
+  - Pekel et al. 2016
+  - Abell et al. 2008
+F2.3.web.mix_v2.0:
+  datasets:
+  - HydroLAKES-1.0
+  - FEOW-2008
+  - GSW-1.1
+  references:
+  - Messager et al. 2016
+  - Abell et al. 2008
+  - Pekel et al. 2016
+F2.3.web.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F2.4.IM.alt_v2.0:
+  datasets:
+  - KG-climate-2018
+  - HydroLAKES-1.0
+  references:
+  - Beck et al. 2018
+  - Messager et al. 2016
+F2.4.IM.mix_v1.0:
+  datasets:
+  - HydroAtlas-1.0
+  - HydroLAKES-1.0
+  references:
+  - Linke et al. 2019
+  - Messager et al. 2016
+F2.4.IM.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F2.4.web.map_v1.0:
+  datasets:
+  - HydroAtlas-1.0
+  - HydroLAKES-1.0
+  references:
+  - Linke et al. 2019
+  - Messager et al. 2016
+F2.4.web.mix_v1.0:
+  datasets:
+  - HydroLAKES-1.0
+  - HydroAtlas-1.0
+  references:
+  - Messager et al. 2016
+  - Linke et al. 2019
+F2.4.web.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F2.5.IM.alt_v2.0:
+  datasets:
+  - GLWD-2004
+  - KG-climate-2018
+  references:
+  - "Lehner and D\xF6ll 2004"
+  - Beck et al. 2018
+F2.5.IM.mix_v1.0:
+  datasets:
+  - HydroLAKES-1.0
+  - GSW-1.1
+  - HydroAtlas-1.0
+  - GLWD-2004
+  references:
+  - Messager et al. 2016
+  - Pekel et al. 2016
+  - Linke et al. 2019
+  - "Lehner and D\xF6ll 2004"
+F2.5.IM.orig_v1.0:
+  datasets:
+  - HydroAtlas-1.0
+  - FEOW-2008
+  references:
+  - Linke et al. 2019
+  - Abell et al. 2008
+F2.5.web.map_v1.0:
+  datasets:
+  - HydroAtlas-1.0
+  - GLWD-2004
+  - HydroLAKES-1.0
+  - GSW-1.1
+  references:
+  - Linke et al. 2019
+  - "Lehner and D\xF6ll 2004"
+  - Messager et al. 2016
+  - Pekel et al. 2016
+F2.5.web.mix_v1.0:
+  datasets:
+  - GSW-1.1
+  - HydroLAKES-1.0
+  - GLWD-2004
+  - HydroAtlas-1.0
+  references:
+  - Pekel et al. 2016
+  - Messager et al. 2016
+  - "Lehner and D\xF6ll 2004"
+  - Linke et al. 2019
+F2.5.web.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F2.6.IM.alt_v2.0:
+  datasets:
+  - CRU-TS-v4
+  - Saline-lake-list
+  - HydroLAKES-1.0
+  references:
+  - Harris et al. 2014
+  - Wurtsbaugh et al. 2017
+  - Messager et al. 2016
+F2.6.IM.mix_v1.0:
+  datasets:
+  - HydroAtlas-1.0
+  - HydroLAKES-1.0
+  - GSW-1.1
+  - Saline-lake-list
+  references:
+  - Linke et al. 2019
+  - Messager et al. 2016
+  - Pekel et al. 2016
+  - Wurtsbaugh et al. 2017
+F2.6.IM.mix_v2.0:
+  datasets:
+  - HydroLAKES-1.0
+  - Saline-lake-list
+  - FEOW-2008
+  references:
+  - Messager et al. 2016
+  - Wurtsbaugh et al. 2017
+  - Abell et al. 2008
+F2.6.IM.mix_v3.0:
+  datasets:
+  - FEOW-2008
+  - HydroLAKES-1.0
+  - HydroAtlas-1.0
+  - Saline-lake-list
+  references:
+  - Abell et al. 2008
+  - Messager et al. 2016
+  - Linke et al. 2019
+  - Wurtsbaugh et al. 2017
+F2.6.IM.mix_v4.0:
+  datasets:
+  - HydroLAKES-1.0
+  - FEOW-2008
+  - Saline-lake-list
+  - CRU-TS-v4
+  references:
+  - Messager et al. 2016
+  - Abell et al. 2008
+  - Wurtsbaugh et al. 2017
+  - Harris et al. 2014
+F2.6.IM.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F2.6.web.map_v1.0:
+  datasets:
+  - Saline-lake-list
+  - FEOW-2008
+  - HydroLAKES-1.0
+  - CRU-TS-v4
+  references:
+  - Wurtsbaugh et al. 2017
+  - Abell et al. 2008
+  - Messager et al. 2016
+  - Harris et al. 2014
+F2.6.web.mix_v4.0:
+  datasets:
+  - FEOW-2008
+  - Saline-lake-list
+  - CRU-TS-v4
+  - HydroLAKES-1.0
+  references:
+  - Abell et al. 2008
+  - Wurtsbaugh et al. 2017
+  - Harris et al. 2014
+  - Messager et al. 2016
+F2.6.web.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F2.7.IM.alt_v2.0:
+  datasets:
+  - GLWD-2004
+  - CRU-TS-v4
+  references:
+  - "Lehner and D\xF6ll 2004"
+  - Harris et al. 2014
+F2.7.IM.mix_v1.0:
+  datasets:
+  - HydroAtlas-1.0
+  - GSW-1.1
+  - GLWD-2004
+  - HydroLAKES-1.0
+  references:
+  - Linke et al. 2019
+  - Pekel et al. 2016
+  - "Lehner and D\xF6ll 2004"
+  - Messager et al. 2016
+F2.7.IM.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F2.7.web.map_v1.0:
+  datasets:
+  - HydroAtlas-1.0
+  - GLWD-2004
+  - GSW-1.1
+  - HydroLAKES-1.0
+  references:
+  - Linke et al. 2019
+  - "Lehner and D\xF6ll 2004"
+  - Pekel et al. 2016
+  - Messager et al. 2016
+F2.7.web.mix_v1.0:
+  datasets:
+  - HydroAtlas-1.0
+  - HydroLAKES-1.0
+  - GSW-1.1
+  - GLWD-2004
+  references:
+  - Linke et al. 2019
+  - Messager et al. 2016
+  - Pekel et al. 2016
+  - "Lehner and D\xF6ll 2004"
+F2.7.web.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F2.8.IM.mix_v1.0:
+  datasets:
+  - GSW-1.1
+  - HydroLAKES-1.0
+  - FEOW-2008
+  references:
+  - Pekel et al. 2016
+  - Messager et al. 2016
+  - Abell et al. 2008
+F2.8.IM.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F2.8.web.map_v1.0:
+  datasets:
+  - HydroLAKES-1.0
+  - GSW-1.1
+  - FEOW-2008
+  references:
+  - Messager et al. 2016
+  - Pekel et al. 2016
+  - Abell et al. 2008
+F2.8.web.mix_v1.0:
+  datasets:
+  - HydroLAKES-1.0
+  - FEOW-2008
+  - GSW-1.1
+  references:
+  - Messager et al. 2016
+  - Abell et al. 2008
+  - Pekel et al. 2016
+F2.8.web.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F2.9.IM.mix_v1.0:
+  datasets:
+  - GSW-1.1
+  - FEOW-2008
+  - HydroLAKES-1.0
+  references:
+  - Pekel et al. 2016
+  - Abell et al. 2008
+  - Messager et al. 2016
+F2.9.IM.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F2.9.web.map_v1.0:
+  datasets:
+  - HydroLAKES-1.0
+  - GSW-1.1
+  - FEOW-2008
+  references:
+  - Messager et al. 2016
+  - Pekel et al. 2016
+  - Abell et al. 2008
+F2.9.web.mix_v1.0:
+  datasets:
+  - HydroLAKES-1.0
+  - FEOW-2008
+  - GSW-1.1
+  references:
+  - Messager et al. 2016
+  - Abell et al. 2008
+  - Pekel et al. 2016
+F2.9.web.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F3.1.IM.orig_v1.0:
+  datasets:
+  - GLWD-2004
+  references:
+  - "Lehner B, D\xF6ll P  2004"
+F3.1.WM.nwx_v1.0:
+  datasets:
+  - HydroLAKES-1.0
+  - GOODD-2020
+  references:
+  - Messager et al. 2016
+  - Mulligan et al. 2020
+F3.1.web.orig_v1.0:
+  datasets:
+  - GLWD-2004
+  references:
+  - "Lehner B, D\xF6ll P  2004"
+F3.2.IM.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F3.2.WM.nwx_v1.0:
+  datasets:
+  - HydroLAKES-1.0
+  - EarthStat-Crops
+  references:
+  - Messager et al. 2016
+  - Ramankutty et al. 2008
+F3.2.web.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F3.3.IM.alt_v1.0:
+  datasets:
+  - Anthromes-v2.0
+  references:
+  - Monfreda CN, Ramankutty N, Foley JA  2008
+F3.3.IM.alt_v2.0:
+  datasets:
+  - Anthromes-v2.0
+  references:
+  - Monfreda CN, Ramankutty N, Foley JA  2008
+F3.3.IM.orig_v1.0:
+  datasets:
+  - Anthromes-v2.0
+  references:
+  - Monfreda CN, Ramankutty N, Foley JA  2008
+F3.3.WM.nwx_v1.0:
+  datasets:
+  - Anthromes-v2.0
+  references:
+  - Monfreda CN, Ramankutty N, Foley JA  2008
+F3.3.web.alt_v2.0:
+  datasets:
+  - Anthromes-v2.0
+  references:
+  - Monfreda CN, Ramankutty N, Foley JA  2008
+F3.3.web.orig_v1.0:
+  datasets:
+  - Anthromes-v2.0
+  references:
+  - Monfreda CN, Ramankutty N, Foley JA  2008
+F3.4.IM.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F3.4.web.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F3.5.IM.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+F3.5.WM.nwx_v1.0:
+  datasets:
+  - ESRI-2020-Landcover
+  - Global-irrigation-areas
+  references:
+  - Karra et al. 2021
+  - Deepak Nagaraj
+F3.5.WM.nwx_v2.0:
+  datasets:
+  - ESRI-2020-Landcover
+  - Global-irrigation-areas
+  references:
+  - Karra et al. 2021
+  - Deepak Nagaraj
+F3.5.web.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+FM1.1.IM.alt_v2.0:
+  datasets:
+  - GeoNames-2020
+  - SCAR-gazetteer-2020
+  - Coastal-Typology-2011
+  - SRTM30-PLUS-V11
+  references:
+  - GeoNames 2020
+  - SCAR 1992
+  - Durr et al 2011
+  - Becker et al. 2009
+FM1.1.IM.alt_v3.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  - Coastal-Typology-2011
+  - GeoNames-2020
+  - SCAR-gazetteer-2020
+  references:
+  - Becker et al. 2009
+  - Durr et al 2011
+  - GeoNames 2020
+  - SCAR 1992
+FM1.1.IM.orig_v1.0:
+  datasets:
+  - MEOW-2008
+  - GSFM-2014
+  references:
+  - Spalding MD et al.  2008
+  - Harris PT et al. 2014
+FM1.1.web.alt_v3.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  - GeoNames-2020
+  - Coastal-Typology-2011
+  - SCAR-gazetteer-2020
+  references:
+  - Becker et al. 2009
+  - GeoNames 2020
+  - Durr et al 2011
+  - SCAR 1992
+FM1.1.web.map_v1.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  - Coastal-Typology-2011
+  - GeoNames-2020
+  - SCAR-gazetteer-2020
+  references:
+  - Becker et al. 2009
+  - Durr et al 2011
+  - GeoNames 2020
+  - SCAR 1992
+FM1.1.web.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  - MEOW-2008
+  references:
+  - Harris PT et al. 2014
+  - Spalding MD et al.  2008
+FM1.2.IM.orig_v1.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+FM1.2.IM.orig_v2.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+FM1.2.web.map_v1.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+FM1.2.web.orig_v1.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+FM1.2.web.orig_v2.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+FM1.3.IM.orig_v1.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+FM1.3.IM.orig_v2.0:
+  datasets:
+  - MEOW-2008
+  - SRTM30-PLUS-V11
+  references:
+  - Spalding MD et al.  2008
+  - Becker et al. 2009
+FM1.3.web.orig_v1.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+FM1.3.web.orig_v2.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+M1.1.IM.orig_v1.0:
+  datasets:
+  - WCMCseegrass2018
+  references:
+  - Green EP, Short FT 2003
+M1.1.WM.nwx_v1.0:
+  datasets:
+  - ModSeagrass2018
+  references:
+  - Jayathilake and Costello 2018
+M1.1.web.orig_v1.0:
+  datasets:
+  - WCMCseegrass2018
+  references:
+  - Green EP, Short FT 2003
+M1.10.WM.nwx_v1.0:
+  datasets:
+  - Rhodolith-beds
+  references:
+  - Fragkopoulou et al. 2021
+M1.2.IM.orig_v1.0:
+  datasets:
+  - Kelpforest-list
+  - MEOW-2008
+  - GSFM-2014
+  references:
+  - Steneck et al. 2002
+  - Spalding MD et al.  2008
+  - Harris PT et al. 2014
+M1.2.IM.orig_v2.0:
+  datasets:
+  - null
+  references:
+  - Wernberg and Filbee-Dexler 2019
+M1.2.IM.orig_v2.1:
+  datasets:
+  - MEOW-2008
+  - Kelpforest-list
+  - SRTM30-PLUS-V11
+  references:
+  - Spalding MD et al.  2008
+  - Wernberg and Filbee-Dexler 2019
+  - Becker et al. 2009
+M1.2.WM.nwx_v1.0:
+  datasets:
+  - Kelpforest-potential-dist
+  references:
+  - Jayathilake and Costello 2020
+M1.2.web.orig_v1.0:
+  datasets:
+  - Kelpforest-list
+  - MEOW-2008
+  - GSFM-2014
+  references:
+  - Steneck et al. 2002
+  - Spalding MD et al.  2008
+  - Harris PT et al. 2014
+M1.2.web.orig_v2.1:
+  datasets:
+  - MEOW-2008
+  - SRTM30-PLUS-V11
+  - Kelpforest-list
+  references:
+  - Spalding MD et al.  2008
+  - Becker et al. 2009
+  - Wernberg and Filbee-Dexler 2019
+M1.2.web.orig_v2.2:
+  datasets:
+  - MEOW-2008
+  - Kelpforest-list
+  references:
+  - Spalding MD et al.  2008
+  - Wernberg and Filbee-Dexler 2019
+M1.3.IM.orig_v1.0:
+  datasets:
+  - Corals500m
+  references:
+  - IMaRS/USF 2011
+M1.3.WM.nwx_v1.0:
+  datasets:
+  - Global-Coral-Reefs-2018
+  - Allen-Coral-Atlas
+  - Corals500m
+  references:
+  - UNEP-WCMC 2018
+  - Li et al. 2020
+  - IMaRS/USF 2011
+M1.3.web.orig_v1.0:
+  datasets:
+  - Corals500m
+  references:
+  - IMaRS/USF 2011
+M1.4.IM.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  - MEOW-2008
+  - Oyster-reef-list
+  references:
+  - Harris PT et al. 2014
+  - Spalding MD et al.  2008
+  - Beck MW et al. 2011
+M1.4.web.orig_v1.0:
+  datasets:
+  - Oyster-reef-list
+  - GSFM-2014
+  - MEOW-2008
+  references:
+  - Beck MW et al. 2011
+  - Harris PT et al. 2014
+  - Spalding MD et al.  2008
+M1.5.IM.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M1.5.WM.nwx_v1.0:
+  datasets:
+  - Octocorals-suitability-2012
+  references:
+  - Yesson et al. 2012
+M1.5.web.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M1.6.IM.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M1.6.web.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M1.7.IM.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M1.7.web.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M1.8.IM.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M1.8.web.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M1.9.IM.orig_v1.0:
+  datasets:
+  - MEOW-2008
+  - GSFM-2014
+  references:
+  - Spalding MD et al.  2008
+  - Harris PT et al. 2014
+M1.9.WM.nwx_v1.0:
+  datasets:
+  - EMU-2017
+  references:
+  - Sayre et al. 2017
+M1.9.web.orig_v1.0:
+  datasets:
+  - MEOW-2008
+  - GSFM-2014
+  references:
+  - Spalding MD et al.  2008
+  - Harris PT et al. 2014
+M2.1.IM.orig_v1.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  references:
+  - Becker et al. 2009
+M2.1.IM.orig_v2.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  references:
+  - Becker et al. 2009
+M2.1.IM.orig_v2.1:
+  datasets:
+  - SRTM30-PLUS-V11
+  references:
+  - Becker et al. 2009
+M2.1.WM.nwx_v1.0:
+  datasets:
+  - EMU-2017
+  references:
+  - Sayre et al. 2017
+M2.1.web.orig_v1.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  references:
+  - Becker et al. 2009
+M2.1.web.orig_v2.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  references:
+  - Becker et al. 2009
+M2.1.web.orig_v2.1:
+  datasets:
+  - SRTM30-PLUS-V11
+  references:
+  - Becker et al. 2009
+M2.2.IM.orig_v1.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  references:
+  - Becker et al. 2009
+M2.2.IM.orig_v2.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  references:
+  - Becker et al. 2009
+M2.2.WM.nwx_v1.0:
+  datasets:
+  - EMU-2017
+  references:
+  - Sayre et al. 2017
+M2.2.web.orig_v1.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  references:
+  - Becker et al. 2009
+M2.2.web.orig_v2.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  references:
+  - Becker et al. 2009
+M2.3.IM.orig_v1.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  references:
+  - Becker et al. 2009
+M2.3.WM.nwx_v1.0:
+  datasets:
+  - EMU-2017
+  references:
+  - Sayre et al. 2017
+M2.3.web.orig_v1.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  references:
+  - Becker et al. 2009
+M2.4.IM.orig_v1.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  references:
+  - Becker et al. 2009
+M2.4.WM.nwx_v1.0:
+  datasets:
+  - EMU-2017
+  references:
+  - Sayre et al. 2017
+M2.4.web.orig_v1.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  references:
+  - Becker et al. 2009
+M2.5.IM.orig_v1.0:
+  datasets:
+  - G02135-Sea-Ice-3.0
+  references:
+  - Fetterer et al. 2017
+M2.5.WM.nwx_v1.0:
+  datasets:
+  - EMU-2017
+  - MOD29P1D-V6
+  - G02135-Sea-Ice-3.0
+  references:
+  - Sayre et al. 2017
+  - Hall and Riggs 2015
+  - Fetterer et al. 2017
+M2.5.web.orig_v1.0:
+  datasets:
+  - G02135-Sea-Ice-3.0
+  references:
+  - Fetterer et al. 2017
+M3.1.IM.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M3.1.WM.nwx_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M3.1.web.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M3.2.IM.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M3.2.WM.nwx_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M3.2.web.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M3.3.IM.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M3.3.WM.nwx_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M3.3.web.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M3.4.IM.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M3.4.IM.orig_v2.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M3.4.WM.nwx_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M3.4.web.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M3.4.web.orig_v2.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M3.5.IM.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M3.5.WM.nwx_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M3.5.web.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M3.6.IM.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M3.6.WM.nwx_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M3.6.web.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  references:
+  - Harris PT et al. 2014
+M3.7.IM.orig_v1.0:
+  datasets:
+  - ESRI-plate-tectonics
+  references:
+  - USGS/ESRI N/D
+M3.7.web.orig_v1.0:
+  datasets:
+  - ESRI-plate-tectonics
+  references:
+  - USGS/ESRI N/D
+M4.1.IM.orig_v1.0:
+  datasets:
+  - Shipwrecks2004
+  - MEOW-2008
+  references:
+  - Monfils R  2004
+  - Spalding MD et al.  2008
+M4.1.WM.nwx_v1.0:
+  datasets:
+  - VIIRS-Night-Lights
+  references:
+  - NOAA NCEI
+M4.1.web.orig_v1.0:
+  datasets:
+  - Shipwrecks2004
+  - MEOW-2008
+  references:
+  - Monfils R  2004
+  - Spalding MD et al.  2008
+M4.2.IM.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  - MEOW-2008
+  - Marine-aquaculture-list
+  references:
+  - Harris PT et al. 2014
+  - Spalding MD et al.  2008
+  - Gentry RR et al. 2017
+M4.2.web.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  - MEOW-2008
+  - Marine-aquaculture-list
+  references:
+  - Harris PT et al. 2014
+  - Spalding MD et al.  2008
+  - Gentry RR et al. 2017
+MFT1.1.IM.alt_v2.0:
+  datasets:
+  - Deltas-at-Risk
+  - Tidal-deltas-list
+  references:
+  - Tessler et al. 2015
+  - Goodbred SL, Saito Y  2012
+MFT1.1.IM.orig_v1.0:
+  datasets:
+  - Tidal-deltas-list
+  references:
+  - Goodbred SL, Saito Y  2012
+MFT1.1.WM.nwx_v1.0:
+  datasets:
+  - Deltas-at-Risk
+  - Global-Delta-Data
+  references:
+  - Tessler et al. 2015
+  - Nienhuis et al. 2020
+MFT1.1.map.orig_v1.0:
+  datasets:
+  - Tidal-deltas-list
+  - Deltas-at-Risk
+  references:
+  - Goodbred SL, Saito Y  2012
+  - Tessler et al. 2015
+MFT1.1.web.orig_v1.0:
+  datasets:
+  - Tidal-deltas-list
+  references:
+  - Goodbred SL, Saito Y  2012
+MFT1.1.web.orig_v2.0:
+  datasets:
+  - Deltas-at-Risk
+  references:
+  - Tessler et al. 2015
+MFT1.2.IM.orig_v0.2:
+  datasets:
+  - USGS-Mangroves-2011
+  references:
+  - Giri C et al. 2011
+MFT1.2.IM.orig_v1.0:
+  datasets:
+  - USGS-Mangroves-2011
+  references:
+  - Giri C et al. 2011
+MFT1.2.WM.nwx_v1.0:
+  datasets:
+  - GMW2016
+  references:
+  - Bunting et al. 2018
+MFT1.2.web.orig_v1.0:
+  datasets:
+  - USGS-Mangroves-2011
+  references:
+  - Giri C et al. 2011
+MFT1.2.web.orig_v2.0:
+  datasets:
+  - USGS-Mangroves-2011
+  references:
+  - Giri C et al. 2011
+MFT1.3.IM.orig_v1.0:
+  datasets:
+  - GlobalSaltmarshes2017
+  references:
+  - McOwen et al. 2017
+MFT1.3.IM.orig_v2.0:
+  datasets:
+  - GlobalSaltmarshes2017
+  references:
+  - McOwen et al. 2017
+MFT1.3.IM.orig_v2.1:
+  datasets:
+  - MEOW-2008
+  - GlobalSaltmarshes2017
+  references:
+  - Spalding MD et al.  2008
+  - McOwen et al. 2017
+MFT1.3.WM.nwx_v1.0:
+  datasets:
+  - Tropical-Wetlands-v2
+  references:
+  - Gumbricht et al. 2017
+MFT1.3.web.orig_v1.0:
+  datasets:
+  - GlobalSaltmarshes2017
+  references:
+  - McOwen et al. 2017
+MFT1.3.web.orig_v2.0:
+  datasets:
+  - GlobalSaltmarshes2017
+  references:
+  - McOwen et al. 2017
+MISSING:
+  references: Missing references
+MT1.1.IM.grid_v1.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+MT1.1.IM.grid_v2.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+MT1.1.IM.orig_v1.0:
+  datasets:
+  - MEOW-2008
+  - GSFM-2014
+  references:
+  - Spalding MD et al.  2008
+  - Harris PT et al. 2014
+MT1.1.IM.orig_v2.1:
+  datasets:
+  - MEOW-2008
+  - GSFM-2014
+  references:
+  - Spalding MD et al.  2008
+  - Harris PT et al. 2014
+MT1.1.web.grid_v2.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+MT1.1.web.map_v1.0:
+  datasets:
+  - MEOW-2008
+  - GSFM-2014
+  references:
+  - Spalding MD et al.  2008
+  - Harris PT et al. 2014
+MT1.1.web.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  - MEOW-2008
+  references:
+  - Harris PT et al. 2014
+  - Spalding MD et al.  2008
+MT1.2.IM.orig_v0.2:
+  datasets:
+  - TidalFlats2019
+  references:
+  - Murray NJ et al. 2019
+MT1.2.IM.orig_v1.0:
+  datasets:
+  - TidalFlats2019
+  references:
+  - Murray NJ et al. 2019
+MT1.2.WM.nwx_v1.0:
+  datasets:
+  - TidalFlats2019
+  references:
+  - Murray NJ et al. 2019
+MT1.2.web.map_v1.0:
+  datasets:
+  - TidalFlats2019
+  references:
+  - Murray NJ et al. 2019
+MT1.2.web.orig_v1.0:
+  datasets:
+  - TidalFlats2019
+  references:
+  - Murray NJ et al. 2019
+MT1.3.IM.grid_v1.0:
+  datasets:
+  - Sandy-Coastlines-2020
+  references:
+  - Vousdoukas et al. 2020
+MT1.3.IM.orig_v1.0:
+  datasets:
+  - GSFM-2014
+  - MEOW-2008
+  references:
+  - Harris PT et al. 2014
+  - Spalding MD et al.  2008
+MT1.3.WM.nwx_v1.0:
+  datasets:
+  - Sandy-Coastlines-2020
+  references:
+  - Vousdoukas et al. 2020
+MT1.3.web.grid_v1.0:
+  datasets:
+  - Sandy-Coastlines-2020
+  references:
+  - Vousdoukas et al. 2020
+MT1.3.web.map_v1.0:
+  datasets:
+  - Sandy-Coastlines-2020
+  references:
+  - Vousdoukas et al. 2020
+MT1.3.web.orig_v1.0:
+  datasets:
+  - MEOW-2008
+  - GSFM-2014
+  references:
+  - Spalding MD et al.  2008
+  - Harris PT et al. 2014
+MT1.4.IM.grid_v1.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+MT1.4.IM.grid_v2.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+MT1.4.IM.orig_v1.0:
+  datasets:
+  - MEOW-2008
+  - GSFM-2014
+  references:
+  - Spalding MD et al.  2008
+  - Harris PT et al. 2014
+MT1.4.IM.orig_v2.1:
+  datasets:
+  - MEOW-2008
+  - GSFM-2014
+  references:
+  - Spalding MD et al.  2008
+  - Harris PT et al. 2014
+MT1.4.web.grid_v2.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+MT1.4.web.map_v1.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+MT1.4.web.orig_v1.0:
+  datasets:
+  - MEOW-2008
+  - GSFM-2014
+  references:
+  - Spalding MD et al.  2008
+  - Harris PT et al. 2014
+MT2.1.IM.orig_v1.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  references:
+  - Becker et al. 2009
+MT2.1.web.map_v1.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  references:
+  - Becker et al. 2009
+MT2.1.web.orig_v1.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  references:
+  - Becker et al. 2009
+MT2.2.IM.orig_v1.0:
+  datasets:
+  - Seabird-colonies-NP
+  references:
+  - Otero et al. 2018
+MT3.1.IM.grid_v1.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+MT3.1.IM.grid_v2.0:
+  datasets:
+  - MEOW-2008
+  - SRTM30-PLUS-V11
+  - VIIRS-Night-Lights
+  references:
+  - Spalding MD et al.  2008
+  - Becker et al. 2009
+  - NOAA NCEI
+MT3.1.IM.orig_v1.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  references:
+  - Becker et al. 2009
+MT3.1.web.grid_v2.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+MT3.1.web.map_v1.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+MT3.1.web.orig_v1.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  references:
+  - Becker et al. 2009
+S1.1.IM.orig_v1.0:
+  datasets:
+  - Carbonate-rocks-3.0
+  references:
+  - Williams P, Ting Fong Y  2016
+S1.1.web.orig_v1.0:
+  datasets:
+  - Carbonate-rocks-3.0
+  references:
+  - Williams P, Ting Fong Y  2016
+S2.1.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+S2.1.WM.nwx_v1.0:
+  datasets:
+  - Global-mining-2020
+  references:
+  - Maus et al. 2020b
+S2.1.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+SF1.1.IM.orig_v1.0:
+  datasets:
+  - Carbonate-rocks-3.0
+  references:
+  - Williams P, Ting Fong Y  2016
+SF1.1.web.orig_v1.0:
+  datasets:
+  - Carbonate-rocks-3.0
+  references:
+  - Williams P, Ting Fong Y  2016
+SF1.2.IM.orig_v1.0:
+  datasets:
+  - BGR-Groundwater-Basins
+  references:
+  - "Bundesanstalt f\xFCr Geowissenschaften und Rohstoffe  BGR"
+SF1.2.web.orig_v1.0:
+  datasets:
+  - BGR-Groundwater-Basins
+  references:
+  - "Bundesanstalt f\xFCr Geowissenschaften und Rohstoffe  BGR"
+SF2.1.IM.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+SF2.1.web.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+SF2.2.IM.orig_v1.0:
+  datasets:
+  - USGS-MRDS
+  - UNEXMIN
+  - Resolve-Ecoregions-2017
+  references:
+  - McFaul et al. 2000
+  - Stasi et al. 2018
+  - Dinerstein et al. 2017
+SF2.2.WM.nwx_v1.0:
+  datasets:
+  - Global-mining-2020
+  references:
+  - Maus et al. 2020b
+SF2.2.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+SM1.1.IM.grid_v2.0:
+  datasets:
+  - Carbonate-rocks-3.0
+  references:
+  - Williams P, Ting Fong Y  2016
+SM1.1.IM.grid_v3.0:
+  datasets:
+  - Carbonate-rocks-3.0
+  - SRTM30-PLUS-V11
+  references:
+  - Williams P, Ting Fong Y  2016
+  - Becker et al. 2009
+SM1.1.IM.orig_v1.0:
+  datasets:
+  - Carbonate-rocks-3.0
+  references:
+  - Williams P, Ting Fong Y  2016
+SM1.1.web.grid_v3.0:
+  datasets:
+  - Carbonate-rocks-3.0
+  references:
+  - Williams P, Ting Fong Y  2016
+SM1.1.web.orig_v1.0:
+  datasets:
+  - Carbonate-rocks-3.0
+  references:
+  - Williams P, Ting Fong Y  2016
+SM1.2.IM.grid_v2.0:
+  datasets:
+  - Carbonate-rocks-3.0
+  references:
+  - Williams P, Ting Fong Y  2016
+SM1.2.IM.grid_v3.0:
+  datasets:
+  - SRTM30-PLUS-V11
+  - Carbonate-rocks-3.0
+  references:
+  - Becker et al. 2009
+  - Williams P, Ting Fong Y  2016
+SM1.2.IM.orig_v1.0:
+  datasets:
+  - Carbonate-rocks-3.0
+  references:
+  - Williams P, Ting Fong Y  2016
+SM1.2.web.grid_v3.0:
+  datasets:
+  - Carbonate-rocks-3.0
+  references:
+  - Williams P, Ting Fong Y  2016
+SM1.3.IM.grid_v2.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+SM1.3.IM.grid_v3.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+SM1.3.IM.orig_v1.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+SM1.3.web.grid_v3.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+SM1.3.web.orig_v1.0:
+  datasets:
+  - MEOW-2008
+  references:
+  - Spalding MD et al.  2008
+T1.1.IM.alt_v2.0:
+  datasets:
+  - KG-climate-2018
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Beck et al. 2018
+  - Tuanmu et al. 2014
+T1.1.IM.alt_v2.1:
+  datasets:
+  - Nature-Map-2020
+  references:
+  - Jung et al. 2020
+T1.1.IM.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T1.1.IM.mix_v2.0:
+  datasets:
+  - IBRA-v7
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - DAWE 2012
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T1.1.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T1.1.web.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T1.1.web.mix_v2.0:
+  datasets:
+  - IBRA-v7
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - DAWE 2012
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T1.1.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T1.1.web_v1.0:
+  datasets:
+  - Nature-Map-2020
+  - Resolve-Ecoregions-2017
+  references:
+  - Jung et al. 2020
+  - Dinerstein et al. 2017
+T1.2.IM.alt_v2.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - KG-climate-2018
+  references:
+  - Tuanmu et al. 2014
+  - Beck et al. 2018
+T1.2.IM.alt_v2.1:
+  datasets:
+  - Nature-Map-2020
+  references:
+  - Jung et al. 2020
+T1.2.IM.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T1.2.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T1.2.WM.nwx_v1.0:
+  datasets:
+  - Climatic-Definition-TDF
+  - Tropical-dry-forest
+  references:
+  - "Oc\xF3n 2020"
+  - Miles et al. 2006
+T1.2.web.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T1.2.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T1.2.web_v1.0:
+  datasets:
+  - Nature-Map-2020
+  - Resolve-Ecoregions-2017
+  references:
+  - Jung et al. 2020
+  - Dinerstein et al. 2017
+T1.3.IM.alt_v2.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - GMBA-Mountain-1.0
+  - Chelsa-1.2
+  references:
+  - Tuanmu et al. 2014
+  - "K\xF6rner et al. 2011"
+  - Karger et al. 2017
+T1.3.IM.alt_v2.1:
+  datasets:
+  - EarthEnv-Cloud-v1.0
+  references:
+  - Wilson and Jetz 2016
+T1.3.IM.alt_v2.2:
+  datasets:
+  - Nature-Map-2020
+  references:
+  - Jung et al. 2020
+T1.3.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T1.3.WM.nwx_v1.0:
+  datasets:
+  - TCF-2021
+  - EarthEnv-Cloud-v1.0
+  references:
+  - Karger et al. 2021
+  - Wilson and Jetz 2016
+T1.3.web.alt_v2.1:
+  datasets:
+  - EarthEnv-Cloud-v1.0
+  references:
+  - Wilson and Jetz 2016
+T1.3.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T1.3.web_v1.0:
+  datasets:
+  - EarthEnv-Cloud-v1.0
+  references:
+  - Wilson and Jetz 2016
+T1.4.IM.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T1.4.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T1.4.IM.orig_v2.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T1.4.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T1.4.web.orig_v2.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T1.4.web_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T2.1.IM.alt_v2.1:
+  datasets:
+  - Nature-Map-2020
+  references:
+  - Jung et al. 2020
+T2.1.IM.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T2.1.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T2.1.web.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T2.1.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T2.2.IM.alt_v2.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Chelsa-1.2
+  references:
+  - Tuanmu et al. 2014
+  - Karger et al. 2017
+T2.2.IM.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T2.2.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T2.2.web.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T2.2.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T2.3.IM.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T2.3.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T2.3.IM.orig_v2.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T2.3.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T2.4.IM.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T2.4.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T2.4.IM.orig_v3.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T2.4.web.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T2.4.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T2.4.web.orig_v2.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T2.5.IM.alt_v2.0:
+  datasets:
+  - Vegetation-height-Australia
+  - Vegetation-height-Australia
+  - KG-climate-2018
+  references:
+  - Armston et al. 2015
+  - Hao et al. 2019
+  - Beck et al. 2018
+T2.5.IM.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T2.5.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T2.5.WM.nwx_v1.0:
+  datasets:
+  - NVIS-v6.0
+  references:
+  - DAWE 2020
+T2.5.web.alt_v2.0:
+  datasets:
+  - Vegetation-height-Australia
+  - KG-climate-2018
+  - Vegetation-height-Australia
+  references:
+  - Hao et al. 2019
+  - Beck et al. 2018
+  - Armston et al. 2015
+T2.5.web.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T2.5.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T2.6.IM.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T2.6.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T2.6.WM.nwx_v1.0:
+  datasets:
+  - NVIS-v6.0
+  references:
+  - DAWE 2020
+T2.6.web.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T2.6.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T3.1.IM.alt_v2.1:
+  datasets:
+  - Nature-Map-2020
+  references:
+  - Jung et al. 2020
+T3.1.IM.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T3.1.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T3.1.IM.orig_v2.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T3.1.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T3.1.web.orig_v2.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T3.2.IM.alt_v2.1:
+  datasets:
+  - Nature-Map-2020
+  references:
+  - Jung et al. 2020
+T3.2.IM.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T3.2.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T3.2.IM.orig_v2.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T3.2.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T3.3.IM.alt_v2.0:
+  datasets:
+  - EUMAP-2016
+  - Ecoregions-North-America-1997
+  - Pisos-Vegetacion-Chile-2006
+  - Landcover-North-America-2016
+  references:
+  - EUMAP 2016
+  - CEC 1997
+  - Luebert and Pliscoff 2006
+  - Latifovic et al. 2016
+T3.3.IM.alt_v2.1:
+  datasets:
+  - Nature-Map-2020
+  references:
+  - Jung et al. 2020
+T3.3.IM.alt_v3.0:
+  datasets:
+  - EUMAP-2016
+  - Pisos-Vegetacion-Chile-2006
+  - Ecoregions-North-America-1997
+  - Landcover-North-America-2016
+  references:
+  - EUMAP 2016
+  - Luebert and Pliscoff 2006
+  - CEC 1997
+  - Latifovic et al. 2016
+T3.3.IM.alt_v4.0:
+  datasets:
+  - Landcover-North-America-2016
+  - Ecoregions-North-America-1997
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  - Pisos-Vegetacion-Chile-2006
+  references:
+  - Latifovic et al. 2016
+  - CEC 1997
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+  - Luebert and Pliscoff 2006
+T3.3.IM.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T3.3.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T3.3.web.alt_v4.0:
+  datasets:
+  - Ecoregions-North-America-1997
+  - Landcover-North-America-2016
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - CEC 1997
+  - Latifovic et al. 2016
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T3.3.web.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T3.3.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T3.4.IM.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T3.4.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T3.4.web.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T3.4.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T4.1.IM.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T4.1.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T4.1.web.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T4.1.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T4.2.IM.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T4.2.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T4.2.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T4.3.IM.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T4.3.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T4.3.WM.nwx_v1.0:
+  datasets:
+  - GIRT
+  references:
+  - Keith and Tozer 2017
+T4.3.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T4.4.IM.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T4.4.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T4.4.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T4.5.IM.alt_v2.1:
+  datasets:
+  - Nature-Map-2020
+  references:
+  - Jung et al. 2020
+T4.5.IM.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T4.5.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T4.5.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T5.1.IM.alt_v2.0:
+  datasets:
+  - null
+  - EarthEnv-LandCover-v1.0
+  - CRU-TS-v4
+  references:
+  - UNEP 1992
+  - Tuanmu et al. 2014
+  - Harris et al. 2014
+T5.1.IM.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T5.1.web.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T5.1.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T5.2.IM.alt_v2.0:
+  datasets:
+  - KG-climate-2018
+  references:
+  - Beck et al. 2018
+T5.2.IM.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T5.2.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T5.2.web.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T5.2.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T5.3.IM.alt_v2.0:
+  datasets:
+  - KG-climate-2018
+  references:
+  - Beck et al. 2018
+T5.3.IM.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T5.3.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T5.3.WM.nwx_v1.0:
+  datasets:
+  - GIRT
+  references:
+  - Keith and Tozer 2017
+T5.3.web.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T5.3.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T5.4.IM.alt_v2.0:
+  datasets:
+  - KG-climate-2018
+  references:
+  - Beck et al. 2018
+T5.4.IM.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T5.4.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T5.4.web.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T5.4.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T5.5.IM.alt_v2.0:
+  datasets:
+  - CRU-TS-v4
+  - null
+  references:
+  - Harris et al. 2014
+  - UNEP 1992
+T5.5.IM.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T5.5.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T5.5.WM.nwx_v1.0:
+  datasets:
+  - Global-AI-PET-v2
+  - TerraClimate-2018
+  - WAD-2018
+  references:
+  - Trabucco and Zomer 2019
+  - Abatzoglou et al. 2018
+  - Cherlet et al. 2018
+T5.5.web.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T5.5.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T6.1.IM.alt_v2.0:
+  datasets:
+  - Antartica-LC-2000
+  - GLIMS-2007
+  - EarthEnv-LandCover-v1.0
+  - GLIMS-2007
+  references:
+  - Hui et al. 2017
+  - GLIMS and NSIDC 2005-2018
+  - Tuanmu et al. 2014
+  - Raup et al 2007
+T6.1.IM.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T6.1.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T6.1.web.alt_v2.0:
+  datasets:
+  - Antartica-LC-2000
+  - GLIMS-2007
+  - GLIMS-2007
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Hui et al. 2017
+  - Raup et al 2007
+  - GLIMS and NSIDC 2005-2018
+  - Tuanmu et al. 2014
+T6.1.web.map_v1.0:
+  datasets:
+  - GLIMS-2007
+  - GLIMS-2007
+  - EarthEnv-LandCover-v1.0
+  - Antartica-LC-2000
+  references:
+  - GLIMS and NSIDC 2005-2018
+  - Raup et al 2007
+  - Tuanmu et al. 2014
+  - Hui et al. 2017
+T6.1.web.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T6.1.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T6.2.IM.alt_v2.0:
+  datasets:
+  - GLIMS-2007
+  - CAVM-2019
+  - EarthEnv-LandCover-v1.0
+  - GeoNames-2020
+  - GLCC-IGBP-2000
+  - GLIMS-2007
+  - Antartica-LC-2000
+  references:
+  - GLIMS and NSIDC 2005-2018
+  - Raynolds et al. 2019
+  - Tuanmu et al. 2014
+  - GeoNames 2020
+  - Loveland et al. 2000
+  - Raup et al 2007
+  - Hui et al. 2017
+T6.2.IM.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T6.2.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T6.2.web.alt_v2.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - GLCC-IGBP-2000
+  - GLIMS-2007
+  - CAVM-2019
+  - Antartica-LC-2000
+  - GLIMS-2007
+  - GeoNames-2020
+  references:
+  - Tuanmu et al. 2014
+  - Loveland et al. 2000
+  - GLIMS and NSIDC 2005-2018
+  - Raynolds et al. 2019
+  - Hui et al. 2017
+  - Raup et al 2007
+  - GeoNames 2020
+T6.2.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T6.3.IM.alt_v2.0:
+  datasets:
+  - KG-climate-2018
+  - glUV1.0
+  references:
+  - Beck et al. 2018
+  - Beckmann et al. 2014
+T6.3.IM.alt_v2.1:
+  datasets:
+  - Nature-Map-2020
+  references:
+  - Jung et al. 2020
+T6.3.IM.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T6.3.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T6.3.web.alt_v2.0:
+  datasets:
+  - glUV1.0
+  - KG-climate-2018
+  references:
+  - Beckmann et al. 2014
+  - Beck et al. 2018
+T6.3.web.map_v1.0:
+  datasets:
+  - KG-climate-2018
+  - glUV1.0
+  references:
+  - Beck et al. 2018
+  - Beckmann et al. 2014
+T6.3.web.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T6.3.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T6.4.IM.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T6.4.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T6.4.WM.nwx_v1.0:
+  datasets:
+  - Alpine-biomes
+  references:
+  - Testolin et al. 2020
+T6.4.web.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T6.4.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T6.5.IM.alt_v2.1:
+  datasets:
+  - Nature-Map-2020
+  references:
+  - Jung et al. 2020
+T6.5.IM.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T6.5.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T6.5.WM.nwx_v1.0:
+  datasets:
+  - Alpine-biomes
+  references:
+  - Testolin et al. 2020
+T6.5.web.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T6.5.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T7.1.IM.alt_v2.0:
+  datasets:
+  - Nature-Map-2020
+  references:
+  - Jung et al. 2020
+T7.1.IM.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T7.1.IM.orig_v1.0:
+  datasets:
+  - Anthromes-v2.0
+  references:
+  - Klein Goldewijk K, van Drecht G  2006
+T7.1.WM.nwx_v1.0:
+  datasets:
+  - EarthStat-Crops
+  references:
+  - Ramankutty et al. 2008
+T7.1.web.alt_v2.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Nature-Map-2020
+  references:
+  - Tuanmu et al. 2014
+  - Jung et al. 2020
+T7.1.web.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T7.1.web.orig_v1.0:
+  datasets:
+  - Anthromes-v2.0
+  references:
+  - Klein Goldewijk K, van Drecht G  2006
+T7.2.IM.alt_v2.0:
+  datasets:
+  - Aquastat-5.0
+  - GLW3-lifestock-2010
+  - Aquastat-5.0
+  references:
+  - Siebert et al. 2013
+  - Gilbert et al. 2018
+  - Siebert et al. 2005
+T7.2.IM.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Aquastat-5.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Siebert et al. 2005
+  - Dinerstein et al. 2017
+T7.2.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T7.2.WM.nwx_v1.0:
+  datasets:
+  - EarthStat-Crops
+  - HANPP-Haberl
+  - GLW3-lifestock-2010
+  references:
+  - Ramankutty et al. 2008
+  - Haberl et al. 2007
+  - Gilbert et al. 2018a
+T7.2.web.alt_v2.0:
+  datasets:
+  - Aquastat-5.0
+  - GLW3-lifestock-2010
+  - Aquastat-5.0
+  references:
+  - Siebert et al. 2013
+  - Gilbert et al. 2018
+  - Siebert et al. 2005
+T7.2.web.map_v1.0:
+  datasets:
+  - Aquastat-5.0
+  - Aquastat-5.0
+  - GLW3-lifestock-2010
+  references:
+  - Siebert et al. 2005
+  - Siebert et al. 2013
+  - Gilbert et al. 2018
+T7.2.web.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T7.2.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T7.3.IM.alt_v2.0:
+  datasets:
+  - Nature-Map-2020
+  references:
+  - Jung et al. 2020
+T7.3.IM.mix_v1.0:
+  datasets:
+  - EarthEnv-LandCover-v1.0
+  - Resolve-Ecoregions-2017
+  references:
+  - Tuanmu et al. 2014
+  - Dinerstein et al. 2017
+T7.3.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T7.3.web.alt_v2.0:
+  datasets:
+  - Nature-Map-2020
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Jung et al. 2020
+  - Tuanmu et al. 2014
+T7.3.web.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T7.3.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T7.4.IM.orig_v1.0:
+  datasets:
+  - VIIRS-Night-Lights
+  - VIIRS-Night-Lights
+  references:
+  - Cinzano et al. 2019
+  - NOAA NCEI
+T7.4.WM.nwx_v1.0:
+  datasets:
+  - ESRI-2020-Landcover
+  references:
+  - Karra et al. 2021
+T7.4.web.orig_v1.0:
+  datasets:
+  - VIIRS-Night-Lights
+  - VIIRS-Night-Lights
+  references:
+  - NOAA NCEI
+  - Cinzano et al. 2019
+T7.5.IM.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T7.5.WM.nwx_v1.0:
+  datasets:
+  - Anthromes-v2.0
+  - Consistent-Land-Use-2000
+  references:
+  - Monfreda CN, Ramankutty N, Foley JA  2008
+  - Erb et al. 2007
+T7.5.WM.nwx_v2.0:
+  datasets:
+  - Consistent-Land-Use-2000
+  - HANPP-Haberl
+  references:
+  - Erb et al. 2007
+  - Haberl et al. 2007
+T7.5.web.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+T7.5.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+T7.5.web.orig_v2.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+TF1.1.IM.alt_v2.0:
+  datasets:
+  - GLWD-2004
+  references:
+  - "Lehner and D\xF6ll 2004"
+TF1.1.IM.alt_v2.1:
+  datasets:
+  - Nature-Map-2020
+  references:
+  - Jung et al. 2020
+TF1.1.IM.alt_v3.0:
+  datasets:
+  - Nature-Map-2020
+  - Resolve-Ecoregions-2017
+  - GLWD-2004
+  references:
+  - Jung et al. 2020
+  - Dinerstein et al. 2017
+  - "Lehner and D\xF6ll 2004"
+TF1.1.IM.alt_v4.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - GLWD-2004
+  - Nature-Map-2020
+  references:
+  - Dinerstein et al. 2017
+  - "Lehner and D\xF6ll 2004"
+  - Jung et al. 2020
+TF1.1.IM.mix_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - EarthEnv-LandCover-v1.0
+  references:
+  - Dinerstein et al. 2017
+  - Tuanmu et al. 2014
+TF1.1.IM.mix_v2.0:
+  datasets:
+  - GLWD-2004
+  - Resolve-Ecoregions-2017
+  references:
+  - "Lehner and D\xF6ll 2004"
+  - Dinerstein et al. 2017
+TF1.1.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+TF1.1.WM.nwx_v1.0:
+  datasets:
+  - Tropical-Wetlands-v2
+  references:
+  - Gumbricht et al. 2017
+TF1.1.web.map_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  - GLWD-2004
+  references:
+  - Dinerstein et al. 2017
+  - "Lehner and D\xF6ll 2004"
+TF1.1.web.mix_v2.0:
+  datasets:
+  - GLWD-2004
+  - Resolve-Ecoregions-2017
+  references:
+  - "Lehner and D\xF6ll 2004"
+  - Dinerstein et al. 2017
+TF1.1.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+TF1.2.IM.alt_v2.0:
+  datasets:
+  - GLWD-2004
+  - KG-climate-2018
+  - EarthEnv-LandCover-v1.0
+  references:
+  - "Lehner and D\xF6ll 2004"
+  - Beck et al. 2018
+  - Tuanmu et al. 2014
+TF1.2.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+TF1.2.IM.orig_v2.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+TF1.2.WM.nwx_v1.0:
+  datasets:
+  - Tropical-Wetlands-v2
+  references:
+  - Gumbricht et al. 2017
+TF1.2.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+TF1.2.web.orig_v2.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+TF1.3.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+TF1.3.WM.nwx_v1.0:
+  datasets:
+  - Tropical-Wetlands-v2
+  references:
+  - Gumbricht et al. 2017
+TF1.3.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+TF1.4.IM.alt_v2.0:
+  datasets:
+  - GLWD-2004
+  - KG-climate-2018
+  references:
+  - "Lehner and D\xF6ll 2004"
+  - Beck et al. 2018
+TF1.4.IM.mix_v1.0:
+  datasets:
+  - GLWD-2004
+  - KG-climate-2018
+  - FEOW-2008
+  references:
+  - "Lehner and D\xF6ll 2004"
+  - Beck et al. 2018
+  - Abell et al. 2008
+TF1.4.IM.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+TF1.4.WM.nwx_v1.0:
+  datasets:
+  - Tropical-Wetlands-v2
+  references:
+  - Gumbricht et al. 2017
+TF1.4.web.map_v1.0:
+  datasets:
+  - KG-climate-2018
+  - FEOW-2008
+  - GLWD-2004
+  references:
+  - Beck et al. 2018
+  - Abell et al. 2008
+  - "Lehner and D\xF6ll 2004"
+TF1.4.web.mix_v1.0:
+  datasets:
+  - KG-climate-2018
+  - FEOW-2008
+  - GLWD-2004
+  references:
+  - Beck et al. 2018
+  - Abell et al. 2008
+  - "Lehner and D\xF6ll 2004"
+TF1.4.web.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+TF1.5.IM.alt_v2.0:
+  datasets:
+  - GLWD-2004
+  references:
+  - "Lehner and D\xF6ll 2004"
+TF1.5.IM.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+TF1.5.WM.nwx_v1.0:
+  datasets:
+  - FEOW-2008
+  - GSW-1.1
+  references:
+  - Abell et al. 2008
+  - Pekel et al. 2016
+TF1.5.web.alt_v2.0:
+  datasets:
+  - GLWD-2004
+  references:
+  - "Lehner and D\xF6ll 2004"
+TF1.5.web.map_v1.0:
+  datasets:
+  - GLWD-2004
+  references:
+  - "Lehner and D\xF6ll 2004"
+TF1.5.web.map_v2.0:
+  datasets:
+  - GLWD-2004
+  references:
+  - "Lehner and D\xF6ll 2004"
+TF1.5.web.orig_v1.0:
+  datasets:
+  - FEOW-2008
+  references:
+  - Abell et al. 2008
+TF1.6.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+TF1.6.WM.nwx_v1.0:
+  datasets:
+  - Tropical-Wetlands-v2
+  references:
+  - Gumbricht et al. 2017
+TF1.6.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+TF1.7.IM.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
+TF1.7.WM.nwx_v1.0:
+  datasets:
+  - Tropical-Wetlands-v2
+  references:
+  - Gumbricht et al. 2017
+TF1.7.web.orig_v1.0:
+  datasets:
+  - Resolve-Ecoregions-2017
+  references:
+  - Dinerstein et al. 2017
