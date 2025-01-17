@@ -97,6 +97,25 @@ done
 ```
 
 
+
+#### Translations
+Similar scripts for alternative languages:
+
+```sh
+for k in TF1.1  TF1.2  TF1.3  TF1.4  TF1.5 TF1.6 TF1.7
+do
+  Rscript --vanilla $SCRIPTDIR/R/update-efg-es-content-typology-website.R ${k} v2.1
+done
+
+for j in $(seq 1 4)
+do
+   for k in $(seq 1 4)
+   do
+      Rscript --vanilla  $SCRIPTDIR/R/update-efg-es-content-typology-website.R M${j}.${k} v2.1
+   done
+done
+```
+
 #### Then...
 
 After running the scripts we need to commit and push the changes in the local repo to the remote:
