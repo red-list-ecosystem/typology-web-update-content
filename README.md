@@ -102,6 +102,7 @@ done
 Similar scripts for alternative languages:
 
 ```sh
+source env/project-env.sh
 for k in TF1.1  TF1.2  TF1.3  TF1.4  TF1.5 TF1.6 TF1.7
 do
   Rscript --vanilla $SCRIPTDIR/R/update-efg-es-content-typology-website.R ${k} v2.1
